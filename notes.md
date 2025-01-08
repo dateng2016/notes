@@ -7,39 +7,39 @@
 The website takes in the following information
 during signing up:
 
-- name
-- business name
-- email
-- phone number
-- password
-- promo code (optional)
-- country
-- city
-- phone number
+-   name
+-   business name
+-   email
+-   phone number
+-   password
+-   promo code (optional)
+-   country
+-   city
+-   phone number
 
 After completing the necessary info, you have the option to choose your role:
 
-- Merchant
-- Delivery company
-- Developer
-- Driver
+-   Merchant
+-   Delivery company
+-   Developer
+-   Driver
 
 I choose merchant
 
 After that, choose type of merchant you are
 
-- Restaurant
-- Meal prep delivery
-- Grocery
-- Pharmacy
-- Florist
-- Other
+-   Restaurant
+-   Meal prep delivery
+-   Grocery
+-   Pharmacy
+-   Florist
+-   Other
 
 I choose Restaurant
 
 Next specify if you have driver
 
-I choose no driver
+I choose YES
 
 Next it asks number of deliveries per month
 
@@ -49,10 +49,10 @@ Address -> New York
 
 Shipday offers the following services:
 
-- Real time delivery tracking for my customers
-- Automatically assign drivers to deliveries
-- Use 3rd party delivery service providers
-- Gather feedback and boost Google reviews
+-   Real time delivery tracking for my customers
+-   Automatically assign drivers to deliveries
+-   Use 3rd party delivery service providers
+-   Gather feedback and boost Google reviews
 
 Finally FREE TRIAL
 
@@ -60,10 +60,10 @@ During the signing up process. If you attempt to sign up multiple times, the web
 
 ### Suggestion
 
-- Add email verification during signing up and ask the user to input the password TWICE to prevent error and confirm user intent.
-- Add email and/or phone number syntax verificatoin.
-- Add email and/or phone number verification process to confirm ownership of email and prevent spam/fake account.
-- Improve the CAPTCHA process to better the user experience.
+-   Add email verification during signing up and ask the user to input the password TWICE to prevent error and confirm user intent.
+-   Add email and/or phone number syntax verificatoin.
+-   Add email and/or phone number verification process to confirm ownership of email and prevent spam/fake account.
+-   Improve the CAPTCHA process to better the user experience.
 
 ---
 
@@ -77,8 +77,8 @@ There is one conversation that says `Announcement`.
 
 ### Suggestions
 
-- There might be bugs on this one. When I type something and send the message. There appears to be some blank messages in the chatbox.
-- The bug disappears after I send the second message and everything becomes normal.
+-   There might be bugs on this one. When I type something and send the message. There appears to be some blank messages in the chatbox.
+-   The bug disappears after I send the second message and everything becomes normal.
 
 ## Shipday AI
 
@@ -86,10 +86,10 @@ There is one conversation that says `Announcement`.
 
 Pre-made prompts:
 
-- Connect Shipday with my POS system
-- Assign orders to 3rd party delivery services
-- See orders on the Map
-- etc...
+-   Connect Shipday with my POS system
+-   Assign orders to 3rd party delivery services
+-   See orders on the Map
+-   etc...
 
 The AI Model is pre-trained with a lot of specific information about how Shipday works.
 
@@ -97,7 +97,7 @@ The model is very familiar with usage of Shipday App from the user's perspective
 
 ### Suggestions
 
-- The first chat messages appears to be blank before I send my first message
+-   The first chat messages appears to be blank before I send my first message
 
 ## Order Page
 
@@ -105,23 +105,23 @@ The model is very familiar with usage of Shipday App from the user's perspective
 
 In the order page, there are many sub-tabs: Current, Scheduled, Completed, Incomplete, History
 
-- Current:
-  - order information includes:
-    - Order No.
-    - C.name
-    - C.address
-    - Distance
-    - Req. pickup time
-    - Req. delivery time
-    - Driver
-    - Status
-    - Tracking
-  - The page can be ordered in various methods based on the user's need such as `order number, status, req. delivery time`
-  - in `+ New order`, there is a Map API for user to search for locations based on Map.
-- Chat Assitant (DOESNOT WORK???)
+-   Current:
+    -   order information includes:
+        -   Order No.
+        -   C.name
+        -   C.address
+        -   Distance
+        -   Req. pickup time
+        -   Req. delivery time
+        -   Driver
+        -   Status
+        -   Tracking
+    -   The page can be ordered in various methods based on the user's need such as `order number, status, req. delivery time`
+    -   in `+ New order`, there is a Map API for user to search for locations based on Map.
+-   Chat Assitant (DOESNOT WORK???)
 
 ### Suggestions
 
 NOTE: Drivrer update needs to go offline and online to reflect changes
 
-- Start playing with APIs
+-   Start playing with APIs
