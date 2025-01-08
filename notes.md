@@ -56,11 +56,18 @@ Shipday offers the following services:
 
 Finally FREE TRIAL
 
+During the signing up process. If you attempt to sign up multiple times, the website will ask you to verify that you are a human to prevent malicious operation. However, the verification process on my computer was impossible to get through after multiple attempts.
+
 ### Suggestion
 
 - Add email verification during signing up and ask the user to input the password TWICE to prevent error and confirm user intent.
 - Add email and/or phone number syntax verificatoin.
 - Add email and/or phone number verification process to confirm ownership of email and prevent spam/fake account.
+- Improve the CAPTCHA process to better the user experience.
+
+---
+
+AFTER LOGGING IN
 
 ## Team Chat
 
@@ -86,7 +93,7 @@ Pre-made prompts:
 
 The AI Model is pre-trained with a lot of specific information about how Shipday works.
 
-The model is familiar with usage of Shipday App from the user's perspective and provides helpful guidance on various steps
+The model is very familiar with usage of Shipday App from the user's perspective and provides helpful guidance on various steps such API documentation, integration, and where to find useful resources.
 
 ### Suggestions
 
