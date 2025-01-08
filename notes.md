@@ -64,11 +64,22 @@ Finally FREE TRIAL
 
 ## Team Chat
 
-<!-- TODO: -->
+### NOTES
 
-## AI Chat
+There is one conversation that says `Announcement`.
 
-<!-- TODO: -->
+### Suggestions
+
+- There might be bugs on this one. When I type something and send the message. There appears to be some blank messages in the chatbox.
+- The bug disappears after I send the second message and everything becomes normal.
+
+## Shipday AI
+
+### NOTES
+
+- Connect Shipday with my POS system
+- Assign orders to 3rd party delivery services
+- See orders on the Map
 
 ## Order Page
 
