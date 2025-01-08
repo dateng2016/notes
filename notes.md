@@ -181,8 +181,50 @@ In this page, the merchant can see the information about their order reviews.
 
 - On top there are overall info about order reviews and driver reviews.
 - On the right there will be AI generated insights about the reviews that the merchant has.
-- The merchant can apply various filters to their reviews.
+- The merchant can apply various filters and sorting methods to their reviews.
 - The merchant can respond to the reviews
+
+### Suggestions
+
+- N/A
+
+## Report Page
+
+### NOTES
+
+This page contains reports of various types including: sales, drivers, performance, extended, analytics, heatmap, third-party delivery services, success report (beta).
+
+- Sales Report
+  - It gives imformation about `Order From`, `Number of Orders`, `Total Order Value`, and `Average Order Size`.
+  - The merchant can export the report.
+- Drivers Report
+  - The page gives information about driver's online hours, performance, and payments info
+  - In the performance tab, the merchant can view earnings of different drivers in a graph
+  - At the bottom it provides detailed info on the driver's work history
+- Performance Report
+  - On-time deliveries tab provides two graphs to show performance on pick up time and delivery time
+  - The two graphs contains info on both percentage within a certain interval and cumulative percentages
+  - At the bottom, there are detailed statistics on performance data ordered by date
+  - The delivery time tab shows performance data based on specific orders.
+- Extended Report
+  - This part offers more detailed reports by order and pick up location
+- Analytics Report
+  - This part uses many charts to give more insights to trends.
+  - By clicking on different metrics, it gives the graph of that performance metric ordered by date.
+  - At the bottom it provides info mainly on driver's on-time delivery percentages.
+- Heatmap
+  - I assume that this part shows the frequency of ordering from customers by different coloring.
+  <!-- TODO: Find out -->
+- Third party delivery services
+  - This gives insights to third-party delivery operations and essential key metrics.
+
+### Suggestions
+
+- N/A
+
+## Integrations
+
+### NOTES
 
 ---
 
