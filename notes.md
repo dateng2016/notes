@@ -1,5 +1,7 @@
 # dispatch.shipday.com
 
+---
+
 ## Sign Up Process
 
 ### Notes
@@ -58,7 +60,7 @@ During the signing up process. If you attempt to sign up multiple times, the web
 
 ### Suggestion
 
-- Add email verification during signing up and ask the user to input the password TWICE to prevent error and confirm user intent.
+- Ask the user to input the password TWICE to prevent error and confirm user intent.
 - Add email and/or phone number syntax verificatoin.
 - Add email and/or phone number verification process to confirm ownership of email and prevent spam/fake account.
 - Improve the CAPTCHA process to better the user experience.
@@ -72,11 +74,11 @@ MAIN PAGE
 ### NOTES
 
 - There is one conversation that says `Announcement`.
-- Assume that this is where the merchant can talk to the drivers.
+- I assume that this is where the merchant can talk to the drivers.
 
 ### Suggestions
 
-- There might be bugs on this one. When I type something and send the message. There appears to be some blank messages in the chatbox.
+- There might be some bugs on this one. When I type something and send the message. There appears to be some blank messages in the chatbox.
 - The bug disappears after I send the second message and everything becomes normal.
 
 ## Shipday AI
@@ -122,7 +124,7 @@ In the order page, there are many sub-tabs: Current, Scheduled, Completed, Incom
 
 - Current:
   - This tab contains the orders that just came in and waiting to be completed
-  - order information includes:
+  - It contains more comprehensive information about the orders
     - Order No.
     - C.name
     - C.address
@@ -133,10 +135,15 @@ In the order page, there are many sub-tabs: Current, Scheduled, Completed, Incom
     - Status
     - Tracking
   - The page can be ordered in various methods based on the user's need such as `order number, status, req. delivery time`
+  - The merchant can upload CSV file to create new orders in batch. The merchant can use a sample file as reference.
+  - The search bar searches keyword based on all attributes of the orders
   - in `+ New order`, there is a Map API for user to search for locations based on Map.
-- Chat Assitant (DOESNOT WORK???)
+  - The merchant can perform operations on orders in batch such as `assign driver`, `send ETA`, `print label`, `delete`.
+  - On the tracking page, the merchant can see the locations and call or text the driver if needed.
 
 ### Suggestions
+
+-
 
 <!-- TODO: -->
 
