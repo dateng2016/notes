@@ -105,12 +105,12 @@ The model is very familiar with usage of Shipday App from the user's perspective
 
 ### NOTES
 
-This part shows a more intuitive view for the user to look at their orders and the progresses on the map.
+This part gives live information to the merchant. The merchant can look at their orders and the order progress on the map.
 
--   The page is organized by drivers
+-   The middle pane is organized by drivers
 -   The merchant is able to see the **source, destintation, and driver locations**
 -   The map is colored (I assume that it gives the merchant some idea about the traffic condition)
--   On the top the merchant can also see some preformance info on the order.
+-   On the top the merchant can also see some preformance information on the order.
 
 ### Suggestions
 
