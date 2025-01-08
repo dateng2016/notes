@@ -77,9 +77,20 @@ There is one conversation that says `Announcement`.
 
 ### NOTES
 
+Pre-made prompts:
+
 - Connect Shipday with my POS system
 - Assign orders to 3rd party delivery services
 - See orders on the Map
+- etc...
+
+The AI Model is pre-trained with a lot of specific information about how Shipday works.
+
+The model is familiar with usage of Shipday App from the user's perspective and provides helpful guidance on various steps
+
+### Suggestions
+
+- The first chat messages appears to be blank before I send my first message
 
 ## Order Page
 
