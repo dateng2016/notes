@@ -121,3 +121,7 @@ In the order page, there are many sub-tabs: Current, Scheduled, Completed, Incom
 - Chat Assitant (DOESNOT WORK???)
 
 ### Suggestions
+
+NOTE: Drivrer update needs to go offline and online to reflect changes
+
+- Start playing with APIs
