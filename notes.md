@@ -54,7 +54,7 @@ Shipday offers the following services:
 -   Use 3rd party delivery service providers
 -   Gather feedback and boost Google reviews
 
-Finally FREE TRIAL
+Finally -> FREE TRIAL
 
 During the signing up process. If you attempt to sign up multiple times, the website will ask you to verify that you are a human to prevent malicious operation. However, the verification process on my computer was impossible to get through after multiple attempts.
 
@@ -67,13 +67,14 @@ During the signing up process. If you attempt to sign up multiple times, the web
 
 ---
 
-AFTER LOGGING IN
+MAIN PAGE
 
 ## Team Chat
 
 ### NOTES
 
-There is one conversation that says `Announcement`.
+-   There is one conversation that says `Announcement`.
+-   Assume that this is where the merchant can talk to the drivers.
 
 ### Suggestions
 
@@ -98,6 +99,22 @@ The model is very familiar with usage of Shipday App from the user's perspective
 ### Suggestions
 
 -   The first chat messages appears to be blank before I send my first message
+-   After sending the second message, the conversation becomes normal.
+
+## Dispatch Page
+
+### NOTES
+
+This part shows a more intuitive view for the user to look at their orders and the progresses on the map.
+
+-   The page is organized by drivers
+-   The merchant is able to see the **source, destintation, and driver locations**
+-   The map is colored (I assume that it gives the merchant some idea about the traffic condition)
+-   On the top the merchant can also see some preformance info on the order.
+
+### Suggestions
+
+-   Sometimes when the window is smaller, some elements overlap and can not be clicked. (The performance bar and the driver pane overlaps when the browser window is too small)
 
 ## Order Page
 
@@ -121,6 +138,8 @@ In the order page, there are many sub-tabs: Current, Scheduled, Completed, Incom
 -   Chat Assitant (DOESNOT WORK???)
 
 ### Suggestions
+
+<!-- TODO: -->
 
 NOTE: Drivrer update needs to go offline and online to reflect changes
 
