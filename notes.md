@@ -140,10 +140,51 @@ In the order page, there are many sub-tabs: Current, Scheduled, Completed, Incom
   - in `+ New order`, there is a Map API for user to search for locations based on Map.
   - The merchant can perform operations on orders in batch such as `assign driver`, `send ETA`, `print label`, `delete`.
   - On the tracking page, the merchant can see the locations and call or text the driver if needed.
+- Scheduled
+  - Not sure how orders could appear there
+  <!-- TODO: Find out -->
+- Completed
+  - This tab contains orders that have been completed by the driver.
+- Incomplete
+  - This part contains the orders that were placed but not completed within 48 hours
+- History
+  - Not sure what this tab is about
+  <!-- TODO: Find out -->
 
 ### Suggestions
 
--
+- N/A
+
+## Driver Page
+
+### NOTES
+
+- This tab shows the information about each driver that works for the merchant and their payment information
+
+### Suggestions
+
+- N/A
+
+## Map Page
+
+### NOTES
+
+- This page shows locations including `merchant`, `driver`, `destination with pick up time
+- Merchant can adjust map pin filters at the top right corner.
+- Merchants can also view the performance stats on top
+
+## Review Page
+
+### NOTES
+
+In this page, the merchant can see the information about their order reviews.
+
+- On top there are overall info about order reviews and driver reviews.
+- On the right there will be AI generated insights about the reviews that the merchant has.
+- The merchant can apply various filters to their reviews.
+- The merchant can respond to the reviews
+
+---
 
 <!-- TODO: -->
 
