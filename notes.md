@@ -123,6 +123,7 @@ This part gives live information to the merchant. The merchant can look at their
 In the order page, there are many sub-tabs: Current, Scheduled, Completed, Incomplete, History
 
 -   Current:
+    -   This tab contains the orders that just came in and waiting to be completed
     -   order information includes:
         -   Order No.
         -   C.name
