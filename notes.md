@@ -17,8 +17,6 @@ during signing up:
 - city
 - phone number
 
-<!-- TODO: More to add for the signing up process -->
-
 After completing the necessary info, you have the option to choose your role:
 
 - Merchant
@@ -50,13 +48,13 @@ I choose 100 - 1000
 Address -> New York
 
 Shipday offers the following services:
+
 - Real time delivery tracking for my customers
 - Automatically assign drivers to deliveries
 - Use 3rd party delivery service providers
 - Gather feedback and boost Google reviews
 
 Finally FREE TRIAL
-
 
 ### Suggestion
 
@@ -71,7 +69,6 @@ Finally FREE TRIAL
 ## AI Chat
 
 <!-- TODO: -->
-
 
 ## Order Page
 
