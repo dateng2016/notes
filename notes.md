@@ -96,6 +96,8 @@ The AI Model is pre-trained with a lot of specific information about how Shipday
 
 The model is very familiar with usage of Shipday App from the user's perspective and provides helpful guidance on various steps such API documentation, integration, and where to find useful resources.
 
+It will also provide very useful insights on customer reviews (and performance statistics as well????).
+
 ### Suggestions
 
 - The first chat messages appears to be blank before I send my first message
@@ -226,6 +228,12 @@ This page contains reports of various types including: sales, drivers, performan
 
 ### NOTES
 
+This page provides instructions on how to connect to different applications. Some integrations can be achieved with simply hitting the connect button and putting in the necessary info such as login info while others require more steps (on which the website provides detailed instructions)
+
+### Suggestions
+
+- On the bottom left corner, the `API & Documentation` is covering on top of other elements on the web page.
+
 ---
 
 <!-- TODO: -->
@@ -233,3 +241,12 @@ This page contains reports of various types including: sales, drivers, performan
 NOTE: Drivrer update needs to go offline and online to reflect changes
 
 - Start playing with APIs
+
+## QUESTIONS
+
+- What are the use cases for Integrations
+- How does shipday help get more google reviews
+- How to generate the tracking links for customers?
+- Where is the auto-assign order feature???
+- Where to find the refund feature and how does AI help with refunds?
+- 
