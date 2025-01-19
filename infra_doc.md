@@ -65,4 +65,43 @@ real-time-service is the chat service (chat with driver, dispatchers, customers)
 AWS contains everything infra like db redis, mq
 how to deploy things?
 
-try logistic
+---
+
+Sabbir
+
+Main UI is the QuesttagBackend
+QT-data responseible for business logic, new projects does not depend on it very much
+shipday-localization, responsible for language mapping
+qt-notification -> send notification to customers, emails, SMS. Currently moving this service to another one
+
+auth -> manage all the authentication stuff. all of the services use this.
+shipday-mq-model -> Make sure the json schema produced and consumed match
+qt-dispatch -> API service, most the things that we migrate from QuesttagBackend is put here. two functions: serves API to frontend, and external API.
+report-services ->
+driver-app-api -> (fourth most important )
+shipday-plan -> responsible for maintaining subscripition plans
+
+report, api, play project are the three cores
+
+etaautodispatch-> auto-assign happends in this service, (through manual logic)
+payment service -> handles all the payment and subscriptoin related stuff
+
+(CHECK OUT THE PARTNER PORTAL)
+partner gets 10% cut after getting us a number of customers (payment service)
+
+qt-notification->dependency issue
+notification service -> all other services send message to rabbitmq, notification service consume those messages and handles them from there
+internal-tool -> for the admin portal page, the frontend for that is admin-portal
+external-order-form -> separate domains, gives custom forms
+analytic-service -> calculation result put into a separate DB.
+customer-tracking-> customers can see the tracking of the drivers
+
+review-analytics -> call openai api for, everytime use submit review, we submit to rabbit mq, review-analytic consumes the message, get the keyword from the review and store it in the databse
+order-insertion-service -> all other services that rquire order insertion will call this service
+orderupdatesender -> other services send to rabbit mq, orderupdater consumes the message, do the webhook stuff
+shpday-chat-js -> handles all the chat (frontend)
+real-time-service-> backedn for tha chat
+
+Integration service
+upstream orders created on other sites, send the order to us
+downstream order created at shipday, we send the order back to them.
