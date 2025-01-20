@@ -142,3 +142,6 @@ TODO: Boxfuse
 
 Motaher
 when user place AN order from merchant page. Some systems we need to fetch the order. For most systems, we wait for notificatoins.
+
+For order related update, we need to notifiy the original platform.
+we also send the driver relateed info to the platform so that they can manage it themselves.
