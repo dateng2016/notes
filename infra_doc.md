@@ -145,3 +145,7 @@ when user place AN order from merchant page. Some systems we need to fetch the o
 
 For order related update, we need to notifiy the original platform.
 we also send the driver relateed info to the platform so that they can manage it themselves.
+
+AI agent chat -> (review-analytics github repo)
+
+We have some functions defined at OpenAI.
