@@ -122,10 +122,18 @@ Before estimating you need to call the availability API
 
 Shipday integration lib, provides many functions used for integration. responsbile for calling the API and get the response. (API services will call these funciotns)
 
-When calling teh external API, API services will respond
+When calling the external API, API services will respond
 
 Auto-assignment (in dispatch setting) -> User can choose different algorithms or implement their own rules
 We have in-house auto-assignment AND third-party auto-assignment. (lowest estimate / earliest pickup)
 hybrid auto-dispatch -> first try in-house -> if failed -> then try third party
 
 ETA-auto-dispatch service -> scheduler called every 30 seconds (with a cron job running)
+
+third-party billing (third party usage) for usage like uber, doordash, roadie, -> Two methods: Bank account or credit card
+
+shipday-wallet -> we can buy credits -> can be used for monthly subscription billing AND third party (Only in USD)-> gets charged before credit card and other payment methods
+
+shiday connect
+
+TODO: Boxfuse
