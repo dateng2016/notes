@@ -105,3 +105,27 @@ real-time-service-> backedn for tha chat
 Integration service
 upstream orders created on other sites, send the order to us
 downstream order created at shipday, we send the order back to them.
+
+TALK TO MOTAHER
+
+---
+
+Shaon
+
+Upstream orders comes from other like squarespace, orders come FROM other platfrom TO shipday
+downstream integration like doordash, uber, skipcart..., orders come FROM shipday TO other platforms
+
+Shaon mainly work for downstream integration. Third party delivery services.
+on-demand delivery is for third-party delivery.
+Estimation / quotation will be performed before assignment
+Before estimating you need to call the availability API
+
+Shipday integration lib, provides many functions used for integration. responsbile for calling the API and get the response. (API services will call these funciotns)
+
+When calling teh external API, API services will respond
+
+Auto-assignment (in dispatch setting) -> User can choose different algorithms or implement their own rules
+We have in-house auto-assignment AND third-party auto-assignment. (lowest estimate / earliest pickup)
+hybrid auto-dispatch -> first try in-house -> if failed -> then try third party
+
+ETA-auto-dispatch service -> scheduler called every 30 seconds (with a cron job running)
