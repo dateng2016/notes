@@ -137,3 +137,8 @@ shipday-wallet -> we can buy credits -> can be used for monthly subscription bil
 shiday connect
 
 TODO: Boxfuse
+
+---
+
+Motaher
+when user place AN order from merchant page. Some systems we need to fetch the order. For most systems, we wait for notificatoins.
