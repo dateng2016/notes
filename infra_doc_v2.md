@@ -76,6 +76,8 @@ This service is designed to maintain all the subscription plans for the users.
 
 Driver auto-assignment happens in this service. There are a variety of logic we can choose for how we want to assign the orders (such as choosing the nearest driver or the driver with the minimum number of orders). We have BOTH in-house driver assignment AND third-party driver assignments. In addition, we also have hybrid auto-dispatch, where we first try in-house assignment and then go for third-party driver assignment if the in-house assignment does not work.
 
+In this service, the scheduler will be called every 30 seconds to check if there are orders that need to be assigned.
+
 # Payment-service
 
 This service handles all the payment-related tasks such as subscription payments.
@@ -107,3 +109,11 @@ Other services send messages to RabbitMQ. Order updater will consume those messa
 # Shipday-chat-js
 
 This is the frontend of the chat services. The backend of this is `real-time service`
+
+# Third-party billing
+
+This is for usage like `Uber`, `DoorDash`, `Roadie`, etc. We currently have two methods for payments: Bank account and credit card. (Bank accounts tend to be cheaper since credit cards typically require transaction fee of certain amount).
+
+# Shipday-wallet
+
+Users can buy shipday credits that can be used for monthly subscription billing and/or third party payment. Currently we are only supporting USD payment. When payment occurs, the credit will get charged before credit cards or bank accounts.
