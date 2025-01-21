@@ -36,7 +36,7 @@ The Real-time Service enables live communication between drivers, dispatchers, a
 
 # QT-data
 
-This used to be responsible for many buisiness logic. New projects do not depend on this very much.
+This used to be responsible for many business logic. New projects do not depend on this very much.
 
 # Shipday-localization
 
@@ -44,7 +44,7 @@ This service is responsible for language mapping to ensure services function wel
 
 # QT-notification
 
-This service is responsible for sending notifications via emails or SMS to customers. We are current moving this service to another one due to some dependency-related issues.
+This service is responsible for sending notifications via emails or SMS to customers. We are currently moving this service to another one due to some dependency-related issues.
 
 # Auth
 
@@ -68,8 +68,22 @@ This service handles all the payment-related tasks such as subscription payments
 
 # Notification-service
 
-All other services send message to RabbitMQ, notification service consumes those messages and handles them from there.
+All other services send messages to RabbitMQ, notification service consumes those messages and handles them from there.
 
 # Internal-tool
 
-This services is the backend for the admin portal page. The frontend is `admin-portal`
+This service is the backend for the admin portal page. The frontend is `admin-portal`
+
+# Customer-tracking
+
+This service is used for customers to be able to see real-time tracking of their items.
+
+# Review-Analytics
+
+Every time users submit reviews, we submit to RabbitMQ. Review-analytic will consume the message, get the keyword from the review and store them into the DB.
+
+# Order-Insertion service
+
+All other services that will require order insertions will call this service.
+
+# Order Update Sender
