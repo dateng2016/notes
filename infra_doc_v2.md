@@ -4,7 +4,9 @@ This was the primary backend service previously used for the project, developed 
 
 # QT-dispatch
 
-This is the current API service that handles order-related operations and serves as the main backend service at present. It plays a major role in managing and processing orders within the system
+This is the current API service that handles order-related operations and serves as the main backend service at present. It plays a major role in managing and processing orders within the system.
+
+It mainly contains two types of API's -> API used for frontend, external API
 
 # Integration Service
 
@@ -21,6 +23,8 @@ The Analytic Service is responsible for processing data and generating reports, 
 # Driver APP API's
 
 This service handles all API interactions related to drivers. It is designed to manage the communication and functionality for the driver mobile application.
+
+(Fourth most important API after Questtagbackend, API service, Report Service)
 
 # Order update sender
 
@@ -40,4 +44,24 @@ This service is responsible for language mapping to ensure services function wel
 
 # QT-notification
 
-This service is responsible for sending notifications via emails or SMS to customers. We are current moving this service to another one.
+This service is responsible for sending notifications via emails or SMS to customers. We are current moving this service to another one due to some dependency-related issues.
+
+# Auth
+
+This service manages all the authentication-related tasks. All of the services use this one.
+
+# Shipday-mq-model
+
+This service makes sure that the json schemas produced and the json schemas consumed should match.
+
+# Shipday-plan
+
+This service is designed to maintain all the subscription plans for the users.
+
+# ETA-auto-dispatch
+
+Driver auto-assignment happens in this service. There are a variety of logic we can choose for how we want to assign the orders (such as choosing the nearest driver or the driver with the minimum number of orders)
+
+# Payment-service
+
+This service handles all the payment-related tasks such as subscription payments.
