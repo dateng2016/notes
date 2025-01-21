@@ -1,5 +1,5 @@
 DEVELOPER_CONFIG = True during development
-`	
+
 
 Conversion: today, yesterday, this week …
 Track the visitors to different sites
@@ -17,7 +17,8 @@ Sales -> Out sales team go get customers.
 Admin-portal repo
 
 Src/actions for all API calls
-Src/compnents/sales analytics
+Src/compnents/SalesAnalytics
+
 
 
 
