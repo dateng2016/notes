@@ -22,6 +22,15 @@ There are two types of integrations:
     -   Estimation/Quotation will be performed before assignment.
     -   Before estimating, we also need to call the availability API to confirm availability.
 
+When the user place an order from a merchant page. We need to fetch orders for some systems. For most of the systems, we just wait for the order notifications.
+
+Example flow
+
+-   Platform sends us a webhook(json payload)
+-   data preprocessing (some times we need to decrypt)
+-   Map the data into Shipday compatible data ->
+-   publishes the message of order data in a MQ
+
 # Shipday Integration Lib
 
 This library provides many functions used for integration. It is responsible for calling the API and get the responses. (API services will call these functions)
@@ -100,7 +109,7 @@ Every time users submit reviews, we submit to RabbitMQ. Review-analytic will con
 
 # Order-Insertion service
 
-All other services that will require order insertions will call this service.
+All other services that will require order insertions will call this service. Order insertion service will consume the order payload with company mapping from the MQ. It then store the order into DB (By storing in the MQ middleware, the data does not get lost due to service downtime)
 
 # Order Update Sender
 
