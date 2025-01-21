@@ -1,0 +1,24 @@
+DEVELOPER_CONFIG = True during development
+`	
+
+Conversion: today, yesterday, this week …
+Track the visitors to different sites
+Track how many people actually signed up
+Track number of upgrades
+STV -> Sign up to visitors
+UTS -> Upgrade to sign up 
+UTM -> Predefineed url parameters to ads
+When user click a sponsored google ad, there will be URL parameters.
+
+Inbound -> When someone is doing google search, and found something that mention shpiday, then they use specific URL, they go straight to the website without the help of anybody / anything
+Sales -> Out sales team go get customers.
+
+
+Admin-portal repo
+
+Src/actions for all API calls
+Src/compnents/sales analytics
+
+
+
+For the deployment, we need to add a LEAD SCORE field
