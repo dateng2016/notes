@@ -65,3 +65,11 @@ Driver auto-assignment happens in this service. There are a variety of logic we 
 # Payment-service
 
 This service handles all the payment-related tasks such as subscription payments.
+
+# Notification-service
+
+All other services send message to RabbitMQ, notification service consumes those messages and handles them from there.
+
+# Internal-tool
+
+This services is the backend for the admin portal page. The frontend is `admin-portal`
