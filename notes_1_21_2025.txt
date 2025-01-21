@@ -21,4 +21,14 @@ Src/compnents/sales analytics
 
 
 
-For the deployment, we need to add a LEAD SCORE field
+For the deployment, we need to add a LEAD SCORE field. Store it in the analytic DB. (Asynchly)
+
+Create a new API for the frontend to retrieve the data.
+
+INclude the LEAD SCORE in the email as well.
+
+We want to maximize TRUE POSITIVE
+
+We would rather send less signals but more accurate
+
+First maximum TP, THEN minimize FP.
