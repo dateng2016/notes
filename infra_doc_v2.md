@@ -12,6 +12,20 @@ It mainly contains two types of API's -> API used for frontend, external API
 
 The Integration Service is responsible for handling orders coming from external platforms via webhooks. It ensures communication between different systems by processing incoming orders.
 
+There are two types of integrations:
+
+-   Upstream
+    -   Upstream orders come FROM other platforms TO shipday
+-   Downstream (Shaon mainly work on this downstream integrations, third-party delivery services)
+    -   Downstream orders come FROM shipday TO other platforms such `DoorDash`, `Uber`, `SkipCart`, etc.
+    -   On-demand delivery is also for third-party delivery.
+    -   Estimation/Quotation will be performed before assignment.
+    -   Before estimating, we also need to call the availability API to confirm availability.
+
+# Shipday Integration Lib
+
+This library provides many functions used for integration. It is responsible for calling the API and get the responses. (API services will call these functions)
+
 # Route Service
 
 This service is for routing (TODO: need to talk to Razin for more details)
@@ -60,7 +74,7 @@ This service is designed to maintain all the subscription plans for the users.
 
 # ETA-auto-dispatch
 
-Driver auto-assignment happens in this service. There are a variety of logic we can choose for how we want to assign the orders (such as choosing the nearest driver or the driver with the minimum number of orders)
+Driver auto-assignment happens in this service. There are a variety of logic we can choose for how we want to assign the orders (such as choosing the nearest driver or the driver with the minimum number of orders). We have BOTH in-house driver assignment AND third-party driver assignments. In addition, we also have hybrid auto-dispatch, where we first try in-house assignment and then go for third-party driver assignment if the in-house assignment does not work.
 
 # Payment-service
 
@@ -87,3 +101,9 @@ Every time users submit reviews, we submit to RabbitMQ. Review-analytic will con
 All other services that will require order insertions will call this service.
 
 # Order Update Sender
+
+Other services send messages to RabbitMQ. Order updater will consume those messages. It will send out order update notifications through webhooks that users provide.
+
+# Shipday-chat-js
+
+This is the frontend of the chat services. The backend of this is `real-time service`
