@@ -12,6 +12,7 @@
 -   [ ] Where should I deploy the model?
 -   [ ] I believe that we also need to add the `LEAD SCORE` field in the `New Sign-Up Email`. Can you tell me a bit about the flow for email notification?
 -   [ ] What config information should I obtain such as DB, RabbitMQ and stuff?
+-   [ ] I believe I also need authentication stuff to be able to use the service. Can you help me set that up? A new account needed?
 -   [ ] What are the deployment process? Should I just create a merge request and leave it there? Who should review the code?
 
 ### Internal Dashboard
