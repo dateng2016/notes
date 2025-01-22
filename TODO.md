@@ -14,6 +14,7 @@
 -   [ ] What config information should I obtain such as DB, RabbitMQ and stuff?
 -   [ ] I believe I also need authentication stuff to be able to use the service. Can you help me set that up? A new account needed?
 -   [ ] What are the deployment process? Should I just create a merge request and leave it there? Who should review the code?
+-   [ ] (Ensure everything is up and running properly such as rabbitmq and all the DB)
 
 ### Internal Dashboard
 
