@@ -11,6 +11,8 @@
 -   [ ] What will be the format of the data? (I need to convert this into designated format.) I would like to get some sample data to start working on.
 -   [ ] Where should I deploy the model?
 -   [ ] I believe that we also need to add the `LEAD SCORE` field in the `New Sign-Up Email`. Can you tell me a bit about the flow for email notification?
+-   [ ] What config information should I obtain such as DB, RabbitMQ and stuff?
+-   [ ] What are the deployment process? Should I just create a merge request? Who should review the code?
 
 ### Internal Dashboard
 
