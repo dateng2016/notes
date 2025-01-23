@@ -14,13 +14,13 @@ The Integration Service is responsible for handling orders coming from external 
 
 There are two types of integrations:
 
--   Upstream
-    -   Upstream orders come FROM other platforms TO shipday
--   Downstream (Shaon mainly work on this downstream integrations, third-party delivery services)
-    -   Downstream orders come FROM shipday TO other platforms such `DoorDash`, `Uber`, `SkipCart`, etc.
-    -   On-demand delivery is also for third-party delivery.
-    -   Estimation/Quotation will be performed before assignment.
-    -   Before estimating, we also need to call the availability API to confirm availability.
+- Upstream
+  - Upstream orders come FROM other platforms TO shipday
+- Downstream (Shaon mainly work on this downstream integrations, third-party delivery services)
+  - Downstream orders come FROM shipday TO other platforms such `DoorDash`, `Uber`, `SkipCart`, etc.
+  - On-demand delivery is also for third-party delivery.
+  - Estimation/Quotation will be performed before assignment.
+  - Before estimating, we also need to call the availability API to confirm availability.
 
 # Shipday Integration Lib
 
@@ -28,7 +28,14 @@ This library provides many functions used for integration. It is responsible for
 
 # Route Service
 
-This service is for routing (TODO: need to talk to Razin for more details)
+This service is for routing. (TODO: need to talk to Razin for more details)
+
+We are using the com.google.ortools library from google for routing.
+Currently we are experiencing some issues with the library, so we are loading it with a custom loader class.
+We expose different APIs based on functionalities in the controller.
+We can use different map API such as google map, hover sine and others.
+We will cache the data since API calls will cost money.
+We have Datafeed for our own optimizer.
 
 # Analytic Service
 
