@@ -1,5 +1,5 @@
 DEVELOPER_CONFIG = True during development
-`	
+
 
 Conversion: today, yesterday, this week …
 Track the visitors to different sites
@@ -17,7 +17,8 @@ Sales -> Out sales team go get customers.
 Admin-portal repo
 
 Src/actions for all API calls
-Src/compnents/sales analytics
+Src/compnents/SalesAnalytics
+
 
 
 
@@ -27,8 +28,27 @@ Create a new API for the frontend to retrieve the data.
 
 INclude the LEAD SCORE in the email as well.
 
-We want to maximize TRUE POSITIVE
 
 We would rather send less signals but more accurate
 
-First maximum TP, THEN minimize FP.
+First maximum TP -> THEN minimize FP.
+
+
+
+
+----------------
+
+
+sales analytics -> three subtabs: 
+
+conversions, 
+will have time periods (today, yesterday .....), first we will have the channelstable
+
+Then Ads table
+
+
+Campagains
+google search 'sponsored', we only care about source and campaign
+
+
+Partners
