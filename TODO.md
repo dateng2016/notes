@@ -18,6 +18,10 @@
 
 ### Internal Dashboard
 
--   [ ] Ask Shahriar to create a new account for the internal dashboard
+-   [x] Ask Shahriar to create a new account for the internal dashboard
 -   [ ] What will be the flow for this? Where should I get the data needed to produce the table?
 -   [ ] Are you familiar with the `Internal Dashboard` backend code as well? Who should I talk to for this service?
+
+In application commnetr out the three lines.
+
+blueprints/sales_lead/upgrade.py
