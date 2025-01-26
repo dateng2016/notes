@@ -42,7 +42,7 @@ First maximum TP -> THEN minimize FP.
 sales analytics -> three subtabs: 
 
 conversions, 
-will have time periods (today, yesterday .....), first we will have the channelstable
+will have time periods (today, yesterday .....), first we will have the channels table
 
 Then Ads table
 
