@@ -1,1 +1,5 @@
-git pull && git add . && git commit -m a && git push
+git pull 
+git add . 
+git commit -m a 
+git push
+
