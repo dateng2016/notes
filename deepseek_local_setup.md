@@ -39,7 +39,7 @@ ollama run <Your Preferred Model Name>
 
 ## Interacting with your model with Python
 
-Below are some simple code to interact with your local model with python requests. You can also interact with your local model through ollama python module. Check the official documentation for more details.
+Below are some simple code to interact with your local model with python requests. You can also interact with your local model through other python modules such as `openai`, `ollama`, etc. Check the official documentation for more details.
 
 ```python
 
@@ -69,6 +69,10 @@ else:
 
 ```
 
+---
+
+# I have not been able to install models through the vLLM
+
 # vLLM
 
 vLLM is designed for efficient inference with optimized memory usage and high throughput, which makes it ideal for production environments. Choose this if you need to serve large-scale applications with performance and cost efficiency in mind.
@@ -94,6 +98,17 @@ pip install vllm
 ```bash
 vllm serve "deepseek-ai/DeepSeek-R1-Distill-Llama-8B" --max_model 4096
 ```
+
+The possible model names are:
+
+deepseek-ai/DeepSeek-R1 \
+deepseek-ai/DeepSeek-R1-Zero \
+deepseek-ai/DeepSeek-R1-Distill-Llama-70B \
+deepseek-ai/DeepSeek-R1-Distill-Qwen-32B \
+deepseek-ai/DeepSeek-R1-Distill-Qwen-14B \
+deepseek-ai/DeepSeek-R1-Distill-Llama-8B \
+deepseek-ai/DeepSeek-R1-Distill-Qwen-7B \
+deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 
 ## Use terminal to test out your model
 
@@ -133,5 +148,3 @@ messages = [
 pipe = pipeline("text-generation", model="deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B")
 pipe(messages)
 ```
-
-TODO: Need to find the model names from vllm and their corresponding names.
