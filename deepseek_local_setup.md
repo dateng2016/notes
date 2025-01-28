@@ -16,6 +16,7 @@ Model Names -> Number of parameters
 
 deepseek-r1 -> 7b \
 deepseek-r1:1.5b -> 1.5b \
+deepseek-r1:7b -> 7b \
 deepseek-r1:8b -> 8b \
 deepseek-r1:14b -> 14b \
 deepseek-r1:32b -> 32b \
