@@ -24,6 +24,7 @@ For both models, we should add the features that we currently have for the curre
 
 ### User's Daily Data
 
+- Active integration.
 - Payment method provided (credit card, PayPal, none)
 - Account type (free trial, freemium, paid tier)
 - Daily login frequency (7d/30d rolling averages)
@@ -44,7 +45,12 @@ For both models, we should add the features that we currently have for the curre
 - Integration used?
 - 30-day login trend (slope calculation)
 - "Last active" date recency
+- Feature usage frequencies
 - Feature abandonment sequence (e.g., stopped using analytics → stopped using tracking)
+- Order reviews
+- Driver reviews
+- Number of refunds over a period of time
+
 
 ---
 
