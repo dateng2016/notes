@@ -1,0 +1,9 @@
+extract from common domains into a new list
+
+make this into a new feature: isCommonDomain?
+
+GoogleBusinessPlaceID -> True / False (based on existence)
+
+
+
+
