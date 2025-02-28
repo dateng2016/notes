@@ -1,14 +1,7 @@
--   Run the analytics service
--   Where to write the code for model deployment
--   How to do it in the DB, adding another columns on the analytics db (prod env)? 
--   Walk me throught the flow in the analytics service, How does DB work in DEV env????
--   Make sure that I can sign in and test the apis
--   How can I test this by simulating the sign up events? How does it work scheduler or event based????
--   Internal Dashboard related things
--   
-
-
-
-churn
-
-in the analytics db -> daily usage track
+-   Walk through how to gather data for Churn Model???
+-   Where to store the CSV file?
+-   Server access for ml-service？
+-   Why not enable the scheduler?
+-   We should probably get number of drivers logged in???
+-   For the internal dashboard API, should I write on the current function or should I write ANOTHER one myself???
+-   pkl file for Ensemble???
