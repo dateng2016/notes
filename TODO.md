@@ -1,3 +1,4 @@
+-   What is the deployment process
 -   Walk through how to gather data for Churn Model???
 -   Where to store the CSV file?
 -   Server access for ml-service？
@@ -5,3 +6,4 @@
 -   We should probably get number of drivers logged in???
 -   For the internal dashboard API, should I write on the current function or should I write ANOTHER one myself???
 -   pkl file for Ensemble???
+-   
