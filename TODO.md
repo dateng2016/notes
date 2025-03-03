@@ -1,20 +1,19 @@
 -   What is the deployment process
--   Walk through how to gather data for each columns for the  Churn Model???
--   Where to store the CSV file?
+-   Walk through how to gather data for each columns for the  Churn Model??? -> DOne
+-   Where to store the CSV file?  -> AWS S3
 -   Server access for ml-service？
--   Can we enable the scheduler?
+-   Can we enable the scheduler? 
 -   What is the deal with the carrier count?
 -   We should probably get number of drivers logged in???
 -   For the internal dashboard API, should I write on the current function or should I write ANOTHER one myself???
 -   pkl file for Ensemble???
--   
 
 
 Daily
 Active Integration          -> platform(if not null -> True)&order_source(if not null -> True, need to figure our whether order source is a valid platform) in the order_info table
 Payment Type                -> payment_source from monthly billing table (Stripe/Shopify)  (company&month are primary keys)
 Plan Type                   -> company_info table
-Orders Inserted             -> order_info table 
+Orders Inserted             -> order_info table
 Orders Completed            -> order_info_historical
 Logged In Web               -> daily usage track table
 Logged In App               -> daily usage track table
@@ -29,7 +28,7 @@ Used Driver List            -> daily usage track table
 In-house completed          -> order_info table, (ask Shaon)  third_party_assigned
 Third Party Completed       -> order_info table  (ask Shaon)
 Takeout Orders              -> pickup_order table
-Reviews Received            -> 
+Reviews Received            -> reivew_analysis table
 
 
 analytics_service=> select * from daily_usage_track limit 1;
