@@ -28,8 +28,13 @@ Responded to review         -> get from chat DB, (Ask access)
 Time active on web          -> TBD from daily usage track table
 Time active on app          -> TBD from daily usage track table
 Used Driver List            -> daily usage track table
-In-house completed          -> order_info table, (ask Shaon)  third_party_assigned
-Third Party Completed       -> order_info table  (ask Shaon)
+In-house completed          -> order_info table, third_party_assigned
+Third Party Completed       -> order_info table  
 Takeout Orders              -> pickup_order table
 Reviews Received            -> reivew_analysis table
+
+
+
+
+
 
