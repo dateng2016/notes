@@ -28,7 +28,7 @@ complete order history -> order_info_history (we need to get the sign up date an
 
 How is going with data collection and storage? Can you show me the source code for those? Also the new APIs that you created for data collection.
 
-analytics _ srevice repo -> db/daily_usage_track
+analytics _ srevice repo -> db/daily_usage_track
 analytics DB -> daily_useage_track
 
 
@@ -38,4 +38,4 @@ Walk me through how you gathered training data last time?
 REDUCE THE FALSE NEGATIVS
 
 payment DB -> db_subscription -> dispatcher_id = admin_id
-admin table -> use admin_id match company_id
+Obtain the admin ID -> admin table -> use admin_id match company_id
