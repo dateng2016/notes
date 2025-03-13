@@ -1,0 +1,26 @@
+most tickets are from integration
+
+webhooks and apis from third party
+
+three types -> 
+1. poll orders from their platforms 
+
+2. webhooks -> this use access token, main DB restaurant_mapping contains the access token mapping. fundamental issue -> orders not getting in.
+
+todo -> check the recent orders in the order_info table to see if they are being inserted properly 
+
+# issue 
+1. whether an order was received in the first place. mongo DB -> external_order log
+
+# Collections
+
+1. external_order_log -> verify if an order received from an integration
+() if not received -> ask when was the order supposed to come? -> Search any order that comes in at that time from that origin to confirm if that is a company issue or general integration issue. 
+
+
+for shopify webhooks -> we have incoming_webhook_logs -> 
+
+exception logs -> old integration logs (gloria food, 
+
+order_event_logs -> lots of events
+order_update_logs -> webhooks and stuff
