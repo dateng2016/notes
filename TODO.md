@@ -38,3 +38,26 @@ Reviews Received            -> reivew_analysis table
 
 
 
+
+
+Talk to Adem about the components on the status page
+
+See if we can hide the ibncidents
+
+Work on the deprecated warning for the securityConfiguration.java
+
+
+
+Hadi notes:
+
+we fetch orders from the other sites like Shopify, Square, etc.
+
+First explore their sites,
+
+POLLING their orders, we call the API every interval, 
+WEBHOOK -> We create an app in their place with secrets, we create a client at shopify, we will provide the endpoint to shopify. 
+
+Map it to our order_info table
+
+
+
