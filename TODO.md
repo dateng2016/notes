@@ -1,7 +1,3 @@
-free -> professional -> branded premium -> branded elite -> business -> 
-
--   What is the deployment process
--   Walk through how to gather data for each columns for the  Churn Model??? -> DOne
 -   Where to store the CSV file?  -> AWS S3
 -   Server access for ml-service？
 -   Can we enable the scheduler? 
@@ -42,7 +38,7 @@ Reviews Received            -> reivew_analysis table
 
 Talk to Adem about the components on the status page
 
-See if we can hide the ibncidents
+See if we can hide the incidents 
 
 Work on the deprecated warning for the securityConfiguration.java
 
@@ -58,6 +54,10 @@ POLLING their orders, we call the API every interval,
 WEBHOOK -> We create an app in their place with secrets, we create a client at shopify, we will provide the endpoint to shopify. 
 
 Map it to our order_info table
+
+
+Ecommerce -> customer places the order themselves. 
+PoS system -> Need a phone call or be present before hte cashier and tell the staff to create the order for them. 
 
 
 
