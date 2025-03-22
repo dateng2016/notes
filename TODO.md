@@ -61,3 +61,13 @@ PoS system -> Need a phone call or be present before hte cashier and tell the st
 
 
 
+
+
+
+<!-- TODO: Focus on component right now -->
+// * Integration -> Most important
+// * Dispatcher APP (delivery management) -> to assign third party delivery services -> at least the delivery is working
+
+//* Insertion services -> most important
+//*
+//* SDR sales development representative
