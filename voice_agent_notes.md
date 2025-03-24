@@ -34,6 +34,7 @@
 Conversation Flow Features gives custom control to user on how the conversation should go. 
 
 
+Multi prompt option gives a much more fine-grained control on the prompt for the model.
 
 # VAPI
 ## Features
@@ -52,4 +53,12 @@ Also has workflows that controls the flow of the conversation.
 
 Call transfer -> warm / cold
 
+
+# Synthflow
+
+MORE RESEARCH TO BE DONE
+
+# BLAND AI
+
+# Play AI
 
