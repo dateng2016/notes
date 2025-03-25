@@ -75,8 +75,6 @@ Pay-as-you-go users can have 20 concurrent calls. This can be adjusted with cost
 
 Latency varies from 500-900ms
 
-Integration services only include twilio & other telephony providers & Custom Telephony
-
 Use GPT-4o or custom LLM models (lack of choices)
 
 Did not find any info on TTS and STT models they use (less flexible)
