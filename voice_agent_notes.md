@@ -1,62 +1,61 @@
 #Retell AI
 500ms latency???
+
 ## Features
-- Auto-Sync Knowledge Base -> Webpages + Documents
-- Call Transfer between multiple agents (We are currently only focusing on SDRs??)
-- Appointment Booking
-- Naviagte IVR
-- Branded Call ID
-- Batch Calling
-- Verified Phone Number (No Spam Label)
-- Multilingual Support
-- Post-Call Analysis
-- Websites for knowledge base (this gives most updated info)
+
+-   Auto-Sync Knowledge Base -> Webpages + Documents
+-   Call Transfer between multiple agents (We are currently only focusing on SDRs??)
+-   Appointment Booking
+-   Naviagte IVR
+-   Branded Call ID
+-   Batch Calling
+-   Verified Phone Number (No Spam Label)
+-   Multilingual Support
+-   Post-Call Analysis
+-   Websites for knowledge base (this gives most updated info)
 
 ### Call Transfer
-- Warm/Cold Transfer
+
+-   Warm/Cold Transfer
 
 ### Knowledge Base
-- Upload Webpage 
- - Single page or entire website
- - Real-Time Update
- - 
-- Upload Document
 
-- Test the knowledge in the playground
+-   Upload Webpage
+-   Single page or entire website
+-   Real-Time Update
+-
+-   Upload Document
+
+-   Test the knowledge in the playground
 
 ### Book Appointment
-- check availability function and book appointment function 
+
+-   check availability function and book appointment function
 
 ### Post-Call Analysis
-- Can integrate the analysis data into our own work flow
 
+-   Can integrate the analysis data into our own work flow
 
-Conversation Flow Features gives custom control to user on how the conversation should go. 
-
+Conversation Flow Features gives custom control to user on how the conversation should go.
 
 Multi prompt option gives a much more fine-grained control on the prompt for the model.
 
-
-
-
-
 # VAPI
-## Features
-- Multilingual
-- API-Native
-- Automated Testing
-- Bring your own models
-- Tool calling (plug in your own APIs as tools)
-- File upload for providing context for assistants
-- provider keys configuration 
-- Offers custom LLM(Fine-tuned LLM), Voices, Transcribers...
-- Default tooloing -> transfer calls, end call, dial keypad,  
-- 
-Also has workflows that controls the flow of the conversation.
 
+## Features
+
+-   Multilingual
+-   API-Native
+-   Automated Testing
+-   Bring your own models
+-   Tool calling (plug in your own APIs as tools)
+-   File upload for providing context for assistants
+-   provider keys configuration
+-   Offers custom LLM(Fine-tuned LLM), Voices, Transcribers...
+-   Default tooloing -> transfer calls, end call, dial keypad,
+-   Also has workflows that controls the flow of the conversation.
 
 Call transfer -> warm / cold
-
 
 # Synthflow
 
@@ -66,13 +65,9 @@ MORE RESEARCH TO BE DONE
 
 # Play AI
 
-
-
-
-
 # Comparison
 
-Comparison Points: Latency, Integration, Concurrency, Custom Telephony, Knowledge Base, Special Feature? 
+Comparison Points: Latency, Integration, Concurrency, Custom Telephony, Knowledge Base, Special Feature?
 
 ## Retell AI
 
@@ -94,7 +89,6 @@ Pricing -> TBD
 
 multilingual
 
-
 ## Vapi
 
 Latency (~900ms)
@@ -106,7 +100,7 @@ Extensive ingegration options: AWS S3, Langfuse, Cloudflare R2, etc.
 Multi-language support
 
 Pricing -> TBD (Pricing page down??) Complex pricing structure
- 
+
 Call-analysis -> TBD
 
 Concurrency -> TBD???
@@ -117,11 +111,9 @@ Squads -> Multi-assistant Conversations
 
 Slightly lower uptime on their API (Still 99.952% uptime)
 
-
-
 ## Bland
 
-Rate Limit: By default 100 calls per day. 
+Rate Limit: By default 100 calls per day.
 
 Multi language support
 
