@@ -18,7 +18,7 @@
 ### Knowledge Base
 - Upload Webpage 
  - Single page or entire website
- - Real-Time UPdate
+ - Real-Time Update
  - 
 - Upload Document
 
@@ -35,6 +35,10 @@ Conversation Flow Features gives custom control to user on how the conversation 
 
 
 Multi prompt option gives a much more fine-grained control on the prompt for the model.
+
+
+
+
 
 # VAPI
 ## Features
@@ -62,3 +66,96 @@ MORE RESEARCH TO BE DONE
 
 # Play AI
 
+
+
+
+
+# Comparison
+
+Comparison Points: Latency, Integration, Concurrency, Custom Telephony, Knowledge Base, Special Feature? 
+
+## Retell AI
+
+Pay-as-you-go users can have 20 concurrent calls. This can be adjusted with cost.
+
+Latency varies from 500-900ms
+
+Integration services only include twilio & other telephony providers & Custom Telephony
+
+Use GPT-4o or custom LLM models (lack of choices)
+
+Did not find any info on TTS and STT models they use (less flexible)
+
+Comprehensive post-call analysis: have analysis on user sentiments, disconnect reason, call success rate, pickup rate, call transfer rate, etc.
+
+Offers multi-prompt agent for more fine-grained tasks
+
+Pricing -> TBD
+
+multilingual
+
+
+## Vapi
+
+Latency (~900ms)
+
+Highly Customizable: Many models to choose from multiple providers. Can choose LLM models, voice, transcribers. (OpenAI, DeepSeek, Deepgram, 11Labs, etc.)
+
+Extensive ingegration options: AWS S3, Langfuse, Cloudflare R2, etc.
+
+Multi-language support
+
+Pricing -> TBD (Pricing page down??) Complex pricing structure
+ 
+Call-analysis -> TBD
+
+Concurrency -> TBD???
+
+telephony: Twilio Vonage, Telnyx
+
+Squads -> Multi-assistant Conversations
+
+Slightly lower uptime on their API (Still 99.952% uptime)
+
+
+
+## Bland
+
+Rate Limit: By default 100 calls per day. 
+
+Multi language support
+
+Pathway Generation(conversation flow) by AI (Multi-prompt support) Can choose to use prompt or exact language.
+
+Fine-tuning examples to train the AI on handling edge-cases during the dialogue
+
+Analytics: (fewer analysis compared to Retell AI) number of calls, call pickups, transferred (more focus on numeric analysis)
+
+Unknown models (choices between CORE vs TURBO)
+
+
+
+
+
+
+
+
+
+
+
+
+## Synthflow
+
+latency -> TBD
+
+Single prompt agent
+
+No Multilingual Support
+
+pricing -> TBD
+
+concurrency limit -> 10 for starter can be adjusted
+
+Lack of uptime info
+
+Offers third party integrations: including twilio, eleven labs, Zapier, GoHighLevel, Stripe, OpenAI, Cal.com, HubSpot, etc.
