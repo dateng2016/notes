@@ -123,6 +123,46 @@ Analytics: (fewer analysis compared to Retell AI) number of calls, call pickups,
 
 Unknown models (choices between CORE vs TURBO)
 
+Twilio for phone numbers
+
+
+
+## Play AI
+
+During test the latency is quite high. The performance is not very stable.
+
+
+
+## Just Call
+
+
+## Connex AI 
+
+Cannot get to dashboard??
+
+
+## Ada (Large Company)
+
+Cannot get to dashboard???
+
+## Voxia
+
+No dashboard
+
+
+## Regal (Large Company?)
+
+
+Waiting for support team to create account.
+
+
+
+
+
+
+
+
+
 ## Synthflow
 
 latency -> TBD
@@ -138,3 +178,8 @@ concurrency limit -> 10 for starter can be adjusted
 Lack of uptime info
 
 Offers third party integrations: including twilio, eleven labs, Zapier, GoHighLevel, Stripe, OpenAI, Cal.com, HubSpot, etc.
+
+
+
+
+
