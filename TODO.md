@@ -74,3 +74,15 @@ PoS system -> Need a phone call or be present before hte cashier and tell the st
 
 
 Do a deeper dive on the voice, customization, and the pricing of the agents
+
+
+Vapi pricing info: emailed their support and contacted the sales, waiting for response.
+
+Retell AI pricing: https://www.retellai.com/pricing
+
+Vapi latency -> Low 
+
+Retell AI -> Low
+
+
+
