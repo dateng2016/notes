@@ -73,4 +73,4 @@ PoS system -> Need a phone call or be present before hte cashier and tell the st
 //* SDR sales development representative
 
 
-Do a deeper dive on the voice and the pricing of the agents
+Do a deeper dive on the voice, customization, and the pricing of the agents
