@@ -24,3 +24,20 @@ exception logs -> old integration logs (gloria food,
 
 order_event_logs -> lots of events
 order_update_logs -> webhooks and stuff
+
+
+
+4-2-2025
+
+
+Toast dining options
+
+The order number on our side is the diplay number on toast side
+
+_id in external order log is the same as the request id in ANY log
+
+Data exchange means that we are missing  some values and fields which we need to call their APIs to poll extra data to fit our own structures.
+
+In delete_history collection the content id is the order id.
+
+Both delete_history collectio and order_service_log can contain info about deleted orders.
