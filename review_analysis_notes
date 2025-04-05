@@ -1,0 +1,52 @@
+
+statement = """
+        SELECT
+            order_id,
+            order_type,
+            order_number,
+            company_id,
+            rating, -> foot_rating in `review_analysis`
+            review, -> review_text in `review_analysis`
+            review_time,
+            response, -> NONE !!!!
+            responder, -> NONE !!!!
+            response_time, -> NONE !!!!
+            sentiment, -> overall_sentiment in `review_analysis`
+            driver_rating,
+            carrier_id,
+            carrier_name -> driver_name in `review_analysis
+        FROM {table_name}
+        WHERE company_id={company_id}
+        AND review_time >= '{start_date}'
+        AND review_time < '{end_date}'
+        ORDER BY review_time DESC
+    """
+
+
+"""
+This is the review_analysis table:
++----------------------------+------------------+------+-----+-------------------+-----------------------------------------------+
+| Field                      | Type             | Null | Key | Default           | Extra                                         |
++----------------------------+------------------+------+-----+-------------------+-----------------------------------------------+
+| id                         | bigint           | NO   | PRI | NULL              | auto_increment                                |
+| company_id                 | int              | NO   | MUL | NULL              |                                               |
+| order_id                   | int              | NO   |     | NULL              |                                               |
+| carrier_id                 | int              | YES  | MUL | NULL              |                                               |
+| order_number               | varchar(250)     | NO   |     | NULL              |                                               |
+| driver_name                | varchar(250)     | YES  |     | NULL              |                                               |
+| order_type                 | varchar(255)     | NO   |     | NULL              |                                               |
+| food_rating                | tinyint unsigned | YES  |     | NULL              |                                               |
+| driver_rating              | tinyint unsigned | YES  |     | NULL              |                                               |
+| review_time                | bigint unsigned  | NO   |     | NULL              |                                               |
+| review_text                | text             | YES  |     | NULL              |                                               |
+| review_analysis            | json             | YES  |     | NULL              |                                               |
+| overall_sentiment          | varchar(10)      | YES  |     | NULL              | STORED GENERATED                              |
+| food_sentiment             | varchar(10)      | YES  |     | NULL              | STORED GENERATED                              |
+| delivery_process_sentiment | varchar(10)      | YES  |     | NULL              | STORED GENERATED                              |
+| analyzed_summary           | text             | YES  |     | NULL              | STORED GENERATED                              |
+| carrier_analysis           | json             | YES  |     | NULL              |                                               |
+| other_details              | text             | YES  |     | NULL              | STORED GENERATED                              |
+| created_at                 | timestamp        | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED                             |
+| updated_at                 | timestamp        | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED on update CURRENT_TIMESTAMP |
++----------------------------+------------------+------+-----+-------------------+-----------------------------------------------+
+"""
