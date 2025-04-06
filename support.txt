@@ -41,3 +41,6 @@ Data exchange means that we are missing  some values and fields which we need to
 In delete_history collection the content id is the order id.
 
 Both delete_history collectio and order_service_log can contain info about deleted orders.
+
+
+For webhooks related things, we can check the order_update_log based on orderId, if it has "WEBHOOK_SEND" then everything on our end is good. The issue is not on our end.
