@@ -8,19 +8,3 @@ In short, the delegateOrder method processes an incoming Foodhub event, checks i
 ## Adora (Poll??)
 
 
-
-
-## Notes
-
-Polling:
-
-after 1 or 2 mins we call the order API. Some return only ID, we can then use that to call for more info. We need to map their info to our info.
-
-
-
-2 tables: restaurant mapping and platform_token?? mapping. 
-
-
-Webhook
-
-They send the order event to us whenever the order happens. Payload will contain all the merchant information so that we know which account to map it to. 
