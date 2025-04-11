@@ -14,3 +14,8 @@ Let me know if you need any additional details.
 
 
 API key: DbjmJQ6CQ5.0HfXnOae5HzXet584zXl
+
+
+-- select platform, provider, gateway, order_source from order_info where order_id = 30020818; 
+-- select order_id, provider, gateway, order_source from order_info where platform = "GLORIA" and company_id = 14761; 
+select company_id from admin where email = 'info@thesoupaisle.com'
