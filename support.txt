@@ -44,3 +44,12 @@ Both delete_history collectio and order_service_log can contain info about delet
 
 
 For webhooks related things, we can check the order_update_log based on orderId, if it has "WEBHOOK_SEND" then everything on our end is good. The issue is not on our end.
+
+
+
+from email find the integration_active from company_info.
+
+in the admin portal, account update tab, 
+
+most of the times we join the order_event_log and external_order_log to see the info, try delivery address as keyword.
+
