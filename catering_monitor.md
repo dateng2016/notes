@@ -44,21 +44,28 @@ order log end point -> https://integration.shipday.com/log/orders/30063817
 ## Questions:
 priority -> New column in the order_info table?
 Restaurant name -> from company_info or admin???
-email -> from company_info
+email -> from admin
 order_number -> order_info
-customer name -> from customer table  join by customer ID
+customer name -> from customer table  join by customer ID???
+delivery name = customer name
 order placement time -> from order_info placement_time
 pick up time -> from order_info pickedup_time
 delivery time -> order_info delivery_time
 status -> order_info order_status
-tracking_link -> Where should I get the tracking link
-delivery address -> from customer table????
-tip -> order_info which one: predefined_tip or cash_tip
+tracking_link -> Where should I get the tracking link????????????? Third party tracking vs our own tracking link?????
+delivery address -> from customer table???????????????
+tip -> order_info which one: predefined_tip or cash_tip??????????????
 provider -> order_info provider
-third party ID -> ?????????
+third party ID -> WHERE?????????
 order log -> check admin portal
 API key -> ??????
-Notes -> ???????? add another column for the order_info table???
+Notes -> ???????? A new table???? OR add another column for the order_info table???
 
+WHERE SHOULD THE BACKEND BE IMPLEMENTED???????
 
-
+Show evrything based on order status
+ORDER_ASSIGNED
+ORDER_ACCEPTED_AND_STARTED
+ORDER_ONTHEWAY
+ORDER_PIKEDUP
+ORDER_UNASSIGNED
