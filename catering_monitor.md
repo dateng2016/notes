@@ -102,9 +102,24 @@ How to maintain the order table? (Delete once the status changes?)
 
 
 ## Question for Kamarul
+
+Make sure that the status is accurate. We need to calculate it baased on the time. 
+
+Talk to Shahriar about the code to calculate the status
+
+
 Where should the backend be?
+
+internal-tools
+
 How should I generate the tracking link?
+
+whether it is branded?, order ID, use encryptoin model, 
+HOLD OFF for now
+
 Can we show the API key in the admin portal?
+
+Hold Off for now
 
 
 NOTES? Design a new table
@@ -112,13 +127,29 @@ NOTES? Design a new table
 Two tables:
 
 catering_groups
-columns -> id int auto increment primary key, name varchar NOT NULL, restaurants/companies list/json
+columns -> id int auto increment primary key, name varchar NOT NULL, restaurants/companies_ids STRING (comma separated)
 
 active_catering_orders
-columns -> order_id primary key (matches the order_id in the order_info in main DB), notes varchar, priority int, catering_group_id foreign key to catering_groups.
+columns -> order_id primary key (matches the order_id in the order_info in main DB), 
+notes varchar, 
+priority int, 
+catering_group_id foreign key to catering_groups.
+
+
 To maintain this table, when a request comes in, it will contain the catering group id, we query the main DB, inserted orders that are not present in the able and delete the ones that are not in one of the following statuses:
 ORDER_ASSIGNED
 ORDER_ACCEPTED_AND_STARTED
 ORDER_ONTHEWAY
 ORDER_PIKEDUP
 ORDER_UNASSIGNED
+
+Make two order logs buttons
+
+NO LOG IN
+
+catering group contains companies
+
+Maximum need to be confirmed.
+
+
+Make sure is_caterin
