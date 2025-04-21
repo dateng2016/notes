@@ -152,4 +152,7 @@ catering group contains companies
 Maximum need to be confirmed.
 
 
-Make sure is_caterin
+Make sure is_catering is TRUE
+
+
+Should I collect all the orders that belong to a catering group and calculate the status?
