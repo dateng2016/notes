@@ -155,4 +155,22 @@ Maximum need to be confirmed.
 Make sure is_catering is TRUE
 
 
+
 Should I collect all the orders that belong to a catering group and calculate the status?
+
+
+## Current Columns
+
+- Restaurant name -> restaurant ID from order_info, -> restaurant table
+- email -> from admin
+- order_number -> order_info 
+- customer name -> from customer table join by customer ID
+delivery name = customer name
+- order placement time -> from order_info placement_time
+- pick up time -> from order_info pickedup_time
+- delivery time -> order_info delivery_time
+status -> To Be Calculated
+- delivery address -> from customer table
+- tip -> order_info which one: predefined_tip or cash_tip??????????????
+Only consider the predefined tips is fine
+- provider -> order_info provider
