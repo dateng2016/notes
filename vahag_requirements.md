@@ -48,3 +48,14 @@ Thanks!
 
 
 TODO: Need to get the timeFrame selection
+
+
+
+
+## Shahriar Feedback
+
+1. We need exact types of people who are able to see tha page
+2. Who is going see what portions of the data
+3. Who is going to change the status? How is it calculated?
+4. At the beginning, there is no status, what do we show in the table?
+
