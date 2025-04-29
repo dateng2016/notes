@@ -39,3 +39,13 @@ after polling -> publish event.
 we need to worry about whether the token is revoked 
 
 It depends on each platform where the connection is initiated. 
+
+
+## Prado
+
+Contact the owner to confirm all the events
+
+
+We need to implement order paid and order cancelled API
+
+
