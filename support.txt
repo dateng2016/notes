@@ -53,3 +53,5 @@ in the admin portal, account update tab,
 
 most of the times we join the order_event_log and external_order_log to see the info, try delivery address as keyword.
 
+
+We can also use the addition ID in the data to find if the order ixistsç
