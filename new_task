@@ -4,6 +4,13 @@ Currently only two Enum values in the code -> OFF,ALERT_DRIVER,
 
 Check with Sabbir, ask Sabbir about the hiearchy. This should be available to support and above. 
 
+Support and Admin
+
+Account update wrapper -> 
+
+in accountupadteption, you just need to change the type
+
+check constructAPIRequest
 
 PR for billing identifier frontend:
 https://github.com/shipday/admin-portal/pull/186/files
@@ -14,4 +21,12 @@ https://github.com/shipday/shipday-internal-tool/pull/54/files
 PRs for update stripe receipt addon text under Billing Tools
 
 Task -> Add geofence for features tool 
+
+
+
+companyConfigCongroller
+
+email will be the account email not the email in the settings table
+
+use COMMON_SETTING_UPDATE_QUERY for the sql part.
 
