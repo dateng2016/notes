@@ -1,0 +1,17 @@
+geofence_alert_mode
+
+Currently only two Enum values in the code -> OFF,ALERT_DRIVER,
+
+Check with Sabbir, ask Sabbir about the hiearchy. This should be available to support and above. 
+
+
+PR for billing identifier frontend:
+https://github.com/shipday/admin-portal/pull/186/files
+
+for backend:
+https://github.com/shipday/shipday-internal-tool/pull/54/files
+
+PRs for update stripe receipt addon text under Billing Tools
+
+Task -> Add geofence for features tool 
+

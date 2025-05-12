@@ -32,7 +32,7 @@ other tools integration logs -> order logs.
 third party tools order logs -> third party logs
 
 order log end point -> https://integration.shipday.com/log/orders/30063817
-third party order log end point -> https://api-test.shipday.com/data-query/d/third-party/order?orderNumber=x&placementDate=2025-04-20
+third party order log end point -> https://api-test.shipday.com/data-query/{email}/third-party/order?orderNumber=x&placementDate=2025-04-20
 
 ## Questions:
 
