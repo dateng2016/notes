@@ -2,7 +2,7 @@
 
 #### Retell AI
 
-It claim to be around 600ms
+Estimated latency shows to be around 900-1300ms during testing. Actual latency can go above 1300ms at times.
 
 During testing, retell AI had stable and good performance.
 
@@ -74,5 +74,63 @@ Highly Customizable. We can bring in our own api keys for all the TTS, STT, LLM 
 -   Call successful rate
 -   Call transfer rate
 -   Voicemail rate
+-   Use of LLM to analyze the call information
+-   Webhooks for further analysis after the call to extract info
 
 #### Vapi
+
+-   Call counts
+-   Call Duration
+-   Successful call counts
+-   Disconnection reason
+-   Call transfer count
+-   Success evaluation (using LLM)
+-   Structured data extraction (using LLM)
+-   Custom LLM analysis
+-   Post-call webhooks
+
+## Concurrency
+
+#### Retell AI
+
+20 concurrencies for free + \$8 per concurrency per month
+
+#### Vapi
+
+Pay-as-you-go: 10 concurrencies for free + \$10 / line / month
+Agency: 50 concurrencies for free + \$10 / line / month
+Start-up: 100 concurrencies for free + \$10 / line / month
+
+## Knowledge Base
+
+#### Retell AI
+
+File upload + webpages (URL)
+
+#### Vapi
+
+File upload
+
+## Integration
+
+Both have extensive integrations
+
+#### Retell AI
+
+Twilio, Vonage, Telnyx, Cal.com, Stripe, Azure, Hubspot, etc.
+
+#### Vapi
+
+Twilio, Vonage, Telnyx, AWS S3, Supabase, Langfuse, etc
+
+## Conversation Flow
+
+In terms of conversation flow customization, both services provide similar level of customization
+
+Both services provide common functionalities. You have a conversation flow graph of nodes connected by edges.
+
+Nodes can perform tasks such as conversation (where you prompt the LLM with specific tasks), logic split (condition check), digit press, call transfer, call end, functions, API queries, etc.
+
+## Special Feature
+
+Vapi has **Squads**, where you can connect multiple assistants into one conversation flow.
