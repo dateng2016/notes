@@ -1,0 +1,30 @@
+ask to place an order -> transfer to another person
+where is my order -> API call to the backend
+
+admin portal
+
+Subs monitor
+revenue monitor (default one)
+
+New MRR -> Monthly Recurring Revnue
+
+Churned MRR -> 
+
+
+Net new MRR -> New MRR - Churned MRR
+
+Expected ARR -> Total Annual Revenue = Last Month ARR + net new ARR * 12
+
+Average Days to downgrade -> duration of their last upgrade
+
+Average Days to upgrade -> Sign up date to first upgrade
+
+Upgrade ARPU (Average Revenue Per Unit) -> new MRR / number of upgrades
+
+Downgrade ARPU
+
+Upsell MRR: New MRR from upgrades from non-free plan to higher plan.
+
+Time frame selection -> Today, this week, this month, last month,
+
+subscription monitor (slow one)
