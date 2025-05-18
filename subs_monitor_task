@@ -8,12 +8,11 @@ revenue monitor (default one)
 
 New MRR -> Monthly Recurring Revnue
 
-Churned MRR -> 
-
+Churned MRR ->
 
 Net new MRR -> New MRR - Churned MRR
 
-Expected ARR -> Total Annual Revenue = Last Month ARR + net new ARR * 12
+Expected ARR -> Total Annual Revenue = Last Month ARR + net new ARR \* 12
 
 Average Days to downgrade -> duration of their last upgrade
 
@@ -28,3 +27,7 @@ Upsell MRR: New MRR from upgrades from non-free plan to higher plan.
 Time frame selection -> Today, this week, this month, last month,
 
 subscription monitor (slow one)
+
+## Vapi Test Run
+
+-   Get the data from the website
