@@ -4,7 +4,8 @@ Here is what I need for the "Growth Dashboard" inside our CRM
    The dashboard should be divided into sections for each AE (Mark, Nicals, Alejandro, etc.).
    Each AE section should display a table of leads specific to the countries they manage.
 
-   Instead right now we are doing a filter by REGIONS
+    Instead right now we are doing a filter by REGIONS
+
 2. Lead Status Dropdown
    Similar to existing “Select Agent” or “Priority” dropdowns, I’d like a Status dropdown with the following options (with color coding if possible):
    New (grey)
@@ -45,12 +46,7 @@ Monitoring lead quality and source effectiveness
 Let's also try to have a total number of each AE for the same time windows we can select and total number all AE numbers combined.
 Thanks!
 
-
-
 TODO: Need to get the timeFrame selection
-
-
-
 
 ## Shahriar Feedback
 
@@ -58,4 +54,3 @@ TODO: Need to get the timeFrame selection
 2. Who is going see what portions of the data
 3. Who is going to change the status? How is it calculated?
 4. At the beginning, there is no status, what do we show in the table?
-
