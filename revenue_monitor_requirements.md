@@ -1,12 +1,6 @@
-ask to place an order -> transfer to another person
-where is my order -> API call to the backend
+## Revnue Monitor Requirement
 
-admin portal
-
-Subs monitor
-
-
-revenue monitor (default one)
+Time frame selection -> today, this week, this month, last month,
 
 number of upgrades
 
@@ -29,11 +23,3 @@ Upgrade ARPU (Average Revenue Per Unit) -> new MRR / number of upgrades
 Downgrade ARPU
 
 Upsell MRR: New MRR from upgrades from non-free plan to higher plan.
-
-Time frame selection -> Today, this week, this month, last month,
-
-subscription monitor (slow one)
-
-## Vapi Test Run
-
--   Get the data from the website
