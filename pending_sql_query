@@ -1,0 +1,11 @@
+## Payment DB
+SELECT dispatcher_id, end_at, start_at, subscription_type
+FROM db_subscription
+where start_at >= ? and end_at <= ?
+
+(the time range span will be one month at maximum)
+
+
+## Main DB
+
+

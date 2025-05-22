@@ -5,7 +5,6 @@ admin portal
 
 Subs monitor
 
-
 revenue monitor (default one)
 
 number of upgrades
@@ -18,7 +17,7 @@ Churned MRR -> REDUCED MRR from all the downgrades
 
 Net new MRR -> New MRR - Churned MRR
 
-Current ARR -> 
+Current ARR -> ???
 
 Expected ARR -> Total Annual Revenue = Last Month ARR + net new MRR \* 12
 
@@ -40,15 +39,14 @@ subscription monitor (slow one)
 
 -   Get the data from the website
 
-
------
+---
 
 go to payment service db
 
 table -> db_subscription
 dispatcher_id = admin_id
 
-upgrade -> look at the last 2, first need to be free and second is paid
+upgrade -> look at the last 2 rows, first need to be free and second is paid
 
 downgrade -> look at the last 2, first need to be paid and last one is free
 
@@ -57,12 +55,8 @@ We only consider the base fee when we calculate the revenue.
 for churned MRR -> We look at their monthly billing, we do not use estimate, use coreDB replica -> Monthly_billing table, use the admin_id to join, use the startdate(Always the start of the month) The actual paid amount = billable_amount - discount_amount
 
 
-
-
 ARR
 
-Current ARR = sum of all revenues from last billing cycle * 12
+Current ARR = sum of all revenues from last billing cycle \* 12
 
 Ignore this for now.
-
-
