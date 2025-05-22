@@ -59,3 +59,10 @@ for churned MRR -> We look at their monthly billing, we do not use estimate, use
 
 
 
+ARR
+
+Current ARR = sum of all revenues from last billing cycle * 12
+
+Ignore this for now.
+
+
