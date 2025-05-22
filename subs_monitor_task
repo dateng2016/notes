@@ -39,3 +39,23 @@ subscription monitor (slow one)
 ## Vapi Test Run
 
 -   Get the data from the website
+
+
+-----
+
+go to payment service db
+
+table -> db_subscription
+dispatcher_id = admin_id
+
+upgrade -> look at the last 2, first need to be free and second is paid
+
+downgrade -> look at the last 2, first need to be paid and last one is free
+
+We only consider the base fee when we calculate the revenue.
+
+for churned MRR -> We look at their monthly billing, we do not use estimate, use coreDB replica -> Monthly_billing table, use the admin_id to join, use the startdate(Always the start of the month) The actual paid amount = billable_amount - discount_amount
+
+
+
+
