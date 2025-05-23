@@ -52,11 +52,33 @@ downgrade -> look at the last 2, first need to be paid and last one is free
 
 We only consider the base fee when we calculate the revenue.
 
-for churned MRR -> We look at their monthly billing, we do not use estimate, use coreDB replica -> Monthly_billing table, use the admin_id to join, use the startdate(Always the start of the month) The actual paid amount = billable_amount - discount_amount
-
+for churned MRR -> We look at their monthly billing, we do not use estimate,
+use coreDB replica -> Monthly_billing table,
+use the admin_id to join, use the startdate(Always the start of the month)
+The actual paid amount = billable_amount - discount_amount
 
 ARR
 
 Current ARR = sum of all revenues from last billing cycle \* 12
 
 Ignore this for now.
+
+planDetails = {
+[SUBSCRIPTION_TYPE.BRANDED_PREMIUM_PLUS]: { plan: getCurrentCheckedBrandedPlan(), readablePlanName: "Branded Premium", planCost: "$79.00" },
+[SUBSCRIPTION_TYPE.BRANDED_PREMIUM_WITHOUT_SMS]: { readablePlanName: "Branded Premium without SMS", planCost: "$79.00" },
+[SUBSCRIPTION_TYPE.BRANDED_ELITE]: { readablePlanName: "Branded Elite", planCost: "$119.00" },
+[SUBSCRIPTION_TYPE.BRANDED_ELITE_BASIC]: { readablePlanName: "Branded Elite", planCost: "$50.00" },
+[SUBSCRIPTION_TYPE.BRANDED_ELITE_LITE]: { readablePlanName: "Branded Elite", planCost: "$99.00" },
+[SUBSCRIPTION_TYPE.BRANDED_ELITE_PLUS]: { readablePlanName: "Branded Elite", planCost: "$199.00" },
+[SUBSCRIPTION_TYPE.BRANDED_ELITE_UNLIMITED]: { readablePlanName: "Branded Elite", planCost: "$299.00" },
+[SUBSCRIPTION_TYPE.BUSINESS_ADVANCED]: { readablePlanName: "Business Advanced", planCost: "$299.00" },
+[SUBSCRIPTION_TYPE.BUSINESS_ADVANCED_LITE]: { readablePlanName: "Business Advanced", planCost: "$199.00" },
+[SUBSCRIPTION_TYPE.BUSINESS_ADVANCED_UNLIMITED]: { readablePlanName: "Business Advanced", planCost: "$299.00" },
+[SUBSCRIPTION_TYPE.BUSINESS_ADVANCED_PLUS]: { readablePlanName: "Business Advanced", planCost: "Pay as you go" },
+[SUBSCRIPTION_TYPE.PROFESSIONAL_LITE]: { readablePlanName: "Professional Lite", planCost: "$19.00" },
+[SUBSCRIPTION_TYPE.PROFESSIONAL]: { plan: getCurrentCheckedProfPlan(), readablePlanName: "Professional", planCost: "$29.00" },
+[SUBSCRIPTION_TYPE.PROFESSIONAL_WITHOUT_SMS]: { readablePlanName: "Professional Without SMS", planCost: "$29.00" },
+[SUBSCRIPTION_TYPE.PROFESSIONAL_PLUS]: { plan: getCurrentCheckedProfPlan(), readablePlanName: "Professional", planCost: "$39.00" },
+[SUBSCRIPTION_TYPE.PROFESSIONAL_PLUS_WITHOUT_SMS]: { readablePlanName: "Professional Without SMS", planCost: "$39.00" },
+[SUBSCRIPTION_TYPE.DOORDASH_FLEX]: { readablePlanName: "Doordash flex", planCost: "$0.00" }
+};
