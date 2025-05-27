@@ -1,8 +1,60 @@
 Add filter to catering monitor -> Scehduled + Current (ask Kamarul)
 
+sheduled -> within delivery time
+check for the settings table delivery window
+
+INCOMPLETE ALREADY_DELIVERED CANCELLED -> get rid of these 3
+
+public enum OrderStatus {
+  NOT_ASSIGNED,
+  NOT_ACCEPTED,
+  NOT_STARTED_YET,
+  STARTED,
+  PICKED_UP,
+  ON_THE_WAY,
+  READY_TO_DELIVER,
+  ALREADY_DELIVERED,
+  INCOMPLETE,
+  FAILED_DELIVERY,
+  BROADCASTED,
+  PRE_ASSIGNED,
+  CANCELLED
+}
+
 Add the status filter on the frontend 
 
 
 ## Order Edit
+
+
+### Order Info
+
+Develop a new API 
+
+- customerName (required)
+- customerPhoneNumber (required)
+- customerEmail (required)
+- customerAddress (required)
+- expectedPickupTime 
+- expectedDeliveryTime
+- orderItems
+- deliveryInstruction
+- cateringFlag -> Did not show on the API docs but have it in the dispatch website api request. require using a separate API?
+
+Available to support + developer + admin, check this in the backend
+
+Store in the mongoDB log 
+
+mongo log
+order id
+admin portal email
+support ticket -> a link? or some identifier that we can use to track
+edit payload [json] 
+
+Create a new collection on the mongoDB 
+
+admin portal --> internal - tool --> vaildate the request --> saving the edit log (make sure to track the support person) --> consume api from order insertion service
+
+validate the request -> check data type, check mandatory fields -> check the shipday docs 
 
 
