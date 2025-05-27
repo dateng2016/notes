@@ -31,15 +31,18 @@ Add the status filter on the frontend
 
 Develop a new API 
 
+- orderId (required) 
+
 - customerName (required)
 - customerPhoneNumber (required)
 - customerEmail (required)
 - customerAddress (required)
+
 - expectedPickupTime 
 - expectedDeliveryTime
 - orderItems
 - deliveryInstruction
-- cateringFlag -> Did not show on the API docs but have it in the dispatch website api request. require using a separate API?
+- cateringFlag
 
 Available to support + developer + admin, check this in the backend
 
@@ -61,3 +64,14 @@ validate the request -> check data type, check mandatory fields -> check the shi
 ## API Request
 In the header:
 secret-key -> OeB_YXZrcEgdtHuJTWuT4sPx9y2vXtTUbVLmk_U9Jrk
+
+
+
+## Flow 
+
+- User search the order through "SOME SORT METHOD" 
+- Now user have all the necessary info to edit the order
+- User use the order update API to update the order
+
+
+
