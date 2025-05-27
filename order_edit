@@ -58,3 +58,6 @@ admin portal --> internal - tool --> vaildate the request --> saving the edit lo
 validate the request -> check data type, check mandatory fields -> check the shipday docs 
 
 
+## API Request
+In the header:
+secret-key -> OeB_YXZrcEgdtHuJTWuT4sPx9y2vXtTUbVLmk_U9Jrk
