@@ -28,6 +28,12 @@
 -   Explore whether to use SDK or REST
 -   Make sure to give the necessary info of the customer to the agent
 
+---
+
 -   how to design the agent
--   how to initiate a phone call to a particular customer via this agent - feed information regarding the particular customer
--   how to get the summary of the phone call once it's ended
+    -   DONE -> Create an agent (For now let's do it in the UI)
+    -   TODO: Add knowledge base to the assistant
+    -   DONE -> Design the prompt 
+    -   DONE -> Make the call
+-   TODO: how to initiate a phone call to a particular customer via this agent - feed information regarding the particular customer
+-   TODO: how to get the summary of the phone call once it's ended
