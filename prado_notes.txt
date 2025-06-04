@@ -1,6 +1,0 @@
-# * Additional API calls
-# * order details -> get the order items. Mandatory info -> address, order items, customer details, pickup or delivery
-# * Check the possible enum for fullfilledmethod -> delivery OR pickup
-# * Get the address from order details or customer details.
-# * Ask how to set up the store ID? What is the mapping process?
-# * 
