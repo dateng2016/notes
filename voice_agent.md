@@ -22,11 +22,10 @@
 ## NOTES from Kamarul
 
 -   Need to keep track reactivation discount, need to store it.
--   Keep track of user require the do not call
+-   Keep track of users that require the "do not call"
 -   Keep track on how we ended the conversation
 -   Keep summary of the call.
 -   Explore whether to use SDK or REST
-    -
 -   Make sure to give the necessary info of the customer to the agent
 
 -   how to design the agent
