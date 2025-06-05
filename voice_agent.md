@@ -31,10 +31,22 @@
 ---
 
 -   how to design the agent
-    -   DONE -> Create an agent (For now let's do it in the UI)
-    -   TODO: Add knowledge base to the assistant (We can add it manually for now)
-    -   DONE -> Design the prompt
+    -   DONE -> Create an agent (Create on the go)
+    -   TODO: Add knowledge base to the assistant (Need to get the knowledge base file from someone (Kamarul????))
+    -   DONE -> Design the prompt (TODO: Refine)
     -   DONE -> Make the call
--   TODO: how to initiate a phone call to a particular customer via this agent - feed information regarding the particular customer
-    -   Feed info via system prompt?
--   TODO: how to get the summary of the phone call once it's ended
+-   How to initiate a phone call to a particular customer via this agent - feed information regarding the particular customer
+    -   TODO: Feed info via system prompt?
+-   DONE -> how to get the summary of the phone call once it's ended
+-   TODO: Get the structured output
+
+
+## Notes 6/5 Kamarul
+
+- Use customer phone number for the phone call to identify customers 
+- Http request/respnose body max limit (should this be a concern?) should be fine
+- Try to get rid of cost info in the post-call summary? (minor issue)
+- Use the assistant ID during the API call
+- use webhook-receiver repo to set up webhook. Base URL -> https://webhook.shipday.com/
+- Use integration-scheduler repo to set up scheduler. This is a single instance server. It runs scheduler every 15 minutes. This service will only to find out the companies. (Do not do the filter)
+- task-executor -> Do the heavy lifting. -> Check the time, initiate the phone call. 
