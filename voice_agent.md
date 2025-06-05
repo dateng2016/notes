@@ -32,8 +32,9 @@
 
 -   how to design the agent
     -   DONE -> Create an agent (For now let's do it in the UI)
-    -   TODO: Add knowledge base to the assistant
-    -   DONE -> Design the prompt 
+    -   TODO: Add knowledge base to the assistant (We can add it manually for now)
+    -   DONE -> Design the prompt
     -   DONE -> Make the call
 -   TODO: how to initiate a phone call to a particular customer via this agent - feed information regarding the particular customer
+    -   Feed info via system prompt?
 -   TODO: how to get the summary of the phone call once it's ended
