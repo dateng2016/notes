@@ -50,3 +50,11 @@
 - use webhook-receiver repo to set up webhook. Base URL -> https://webhook.shipday.com/
 - Use integration-scheduler repo to set up scheduler. This is a single instance server. It runs scheduler every 15 minutes. This service will only to find out the companies. (Do not do the filter)
 - task-executor -> Do the heavy lifting. -> Check the time, initiate the phone call. 
+
+
+
+## Notes 6/9 Shaon and Sabbir
+When is call picked up, when is NOT picked up, when the call is completed. Explore
+
+Just get the payload
+
