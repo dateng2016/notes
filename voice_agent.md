@@ -40,21 +40,20 @@
 -   DONE -> how to get the summary of the phone call once it's ended
 -   TODO: Get the structured output
 
-
 ## Notes 6/5 Kamarul
 
-- Use customer phone number for the phone call to identify customers 
-- Http request/respnose body max limit (should this be a concern?) should be fine
-- Try to get rid of cost info in the post-call summary? (minor issue)
-- Use the assistant ID during the API call
-- use webhook-receiver repo to set up webhook. Base URL -> https://webhook.shipday.com/
-- Use integration-scheduler repo to set up scheduler. This is a single instance server. It runs scheduler every 15 minutes. This service will only to find out the companies. (Do not do the filter)
-- task-executor -> Do the heavy lifting. -> Check the time, initiate the phone call. 
-
-
+-   Use customer phone number for the phone call to identify customers
+-   Http request/respnose body max limit (should this be a concern?) should be fine
+-   Try to get rid of cost info in the post-call summary? (minor issue)
+-   Use the assistant ID during the API call
+-   use webhook-receiver repo to set up webhook. Base URL -> https://webhook.shipday.com/
+-   Use integration-scheduler repo to set up scheduler. This is a single instance server. It runs scheduler every 15 minutes. This service will only to find out the companies. (Do not do the filter)
+-   task-executor -> Do the heavy lifting. -> Check the time, initiate the phone call.
 
 ## Notes 6/9 Shaon and Sabbir
+
 When is call picked up, when is NOT picked up, when the call is completed. Explore
 
 Just get the payload
 
+## My Work 6/9
