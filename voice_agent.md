@@ -25,7 +25,6 @@
 -   Keep track of users that require the "do not call"
 -   Keep track on how we ended the conversation
 -   Keep summary of the call.
--   Explore whether to use SDK or REST
 -   Make sure to give the necessary info of the customer to the agent
 
 ---
@@ -43,7 +42,6 @@
 ## Notes 6/5 Kamarul
 
 -   Use customer phone number for the phone call to identify customers
--   Http request/respnose body max limit (should this be a concern?) should be fine
 -   Try to get rid of cost info in the post-call summary? (minor issue)
 -   Use the assistant ID during the API call
 -   use webhook-receiver repo to set up webhook. Base URL -> https://webhook.shipday.com/
