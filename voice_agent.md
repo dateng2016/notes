@@ -87,10 +87,9 @@ Order fail -> rabbit mq -> Task executor -> Check the settings ->
 
 webhook -> rabbit mq -> 
 
-My task:
-task executor -> service -> takes in phone number, json object, return the call IDo
+MY TASK:
+task executor -> service -> takes in phone number, json object, return the call ID -> DONE
 
 webhook -> only the ended -> get the call-state (boolean that indicate whether it is picked up by human or not) + call-id, publish to rabbit
-
 
 store the state -> when it is ended -> store whether it is picked up -> when
