@@ -18,3 +18,8 @@ We can use the aggregation pipeline during search. (Hadi will send samples for a
 To know the exact origin name, check the code. (dumpLog method call), We have a list of origin names in the Index.java
 uuid -> order_event_log -> requestId (this is the external_order_log._id)   This uuid is only created once. 
 
+## NEXT STEP
+SQUARE -> In a separate package
+squareintegraionservicenew.java
+
+For onboarding process, go to dispatch dashboard, check the integration there. Most of the times is the authcontroller that c ontrols the onboarding process. 
