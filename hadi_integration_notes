@@ -14,5 +14,7 @@ logtimestamp -> time when it starts processing
 when we only have the order_id and do not have exact order info, we will need to look at the order_event_log
 external order log is the parent of order_event_log
 mapping between the order_event_log with external_order_log -> order_event.requestId = external_order_log._id
-We can use the aggregation pipeline during search. (Hadi will send samples)
+We can use the aggregation pipeline during search. (Hadi will send samples for aggregation pipeline)
+To know the exact origin name, check the code. (dumpLog method call), We have a list of origin names in the Index.java
+uuid -> order_event_log -> requestId (this is the external_order_log._id)   This uuid is only created once. 
 
