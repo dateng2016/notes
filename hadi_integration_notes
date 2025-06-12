@@ -1,0 +1,15 @@
+## MONGO
+
+### External_order_log 
+collection for incoming webhook for integration projects
+Any event that comes up, we just dump it here. 
+origin -> platform that it comes from
+timestamp -> when the order comes to our system
+logtimestamp -> time when it starts processing
+(example -> square -> webhook timestamp corresponds to timestamp.when the order comes, it hands off to a separate thread pool in a queue, it won't execute immediately, logtimestamp means the time that we start processing the order. 
+### Order_event_log
+when we only have the order_id and do not have exact order info, we will need to look at the order_event_log
+external order log is the parent of order_event_log
+mapping between the order_event_log with external_order_log -> order_event.requestId = external_order_log._id
+We can use the aggregation pipeline during search. (Hadi will send samples)
+
