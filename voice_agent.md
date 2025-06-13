@@ -91,3 +91,23 @@ task executor -> service -> takes in phone number, json object, return the call 
 webhook -> only the ended -> get the call-state (boolean that indicate whether it is picked up by human or not) + call-id, publish to rabbit
 
 store the state -> when it is ended -> store whether it is picked up -> when
+
+## Adem notes 6/13
+
+Expose more info to the voice agent.
+
+Pause at the beginning. 
+
+
+## Sabbir whole flow 6/13
+
+DB schema -> 
+1. failed_order_alert_agent_settings
+2. voice_agent_call (also include the future voice agents)
+	request_id -> this is the UUID
+	
+
+task-executor
+failedOrdernotifylistenr.java -> failedorderalertservice.java
+
+
