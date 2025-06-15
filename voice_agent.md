@@ -114,3 +114,9 @@ failedOrdernotifylistenr.java -> failedorderalertservice.java
 TODO: add the long_order_number change requested by Adem. 
 
 
+redrop -> reinsert it 
+
+based on the conversation to judge 
+
+i will redrop and that is it. 
+Make sure to implement the last 4 digit thing
