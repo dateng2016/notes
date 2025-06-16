@@ -22,4 +22,6 @@ uuid -> order_event_log -> requestId (this is the external_order_log._id)   This
 SQUARE -> In a separate package
 squareintegraionservicenew.java
 
-For onboarding process, go to dispatch dashboard, check the integration there. Most of the times is the authcontroller that c ontrols the onboarding process. 
+For onboarding process, go to dispatch dashboard, check the integration there. Most of the times is the authcontroller that controls the onboarding process. 
+
+

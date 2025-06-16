@@ -48,42 +48,7 @@
 -   Use integration-scheduler repo to set up scheduler. This is a single instance server. It runs scheduler every 15 minutes. This service will only to find out the companies. (Do not do the filter)
 -   task-executor -> Do the heavy lifting. -> Check the time, initiate the phone call.
 
-## Notes 6/9 Shaon and Sabbir
-
-When is call picked up, when is NOT picked up, when the call is completed. Explore
-
-Just get the payload
-
-## My Work 6/9
-
--   When the call is completed -> There will be an end-of-call report
-
--   Possible endedReasons that indicate that the user did not pick up ->
-    -   customer-did-not-answer ✔️ (most definitive)
-    -   voicemail ✔️
-    -   twilio-failed-to-connect-call / vonage-failed-to-connect-call ✔️ (provider-level)
-    -   call.forwarding.operator-busy ✔️
-    -   call.in-progress.error-assistant-did-not-receive-customer-audio (possible no-pickup)
--   endedReasons that indicate connected successfully
-    -   assistant-ended-call
-    -   assistant-ended-call-after-message-spoken
-    -   assistant-ended-call-with-hangup-task
-    -   assistant-forwarded-call	
-    -   assistant-said-end-call-phrase	
-    -   customer-ended-call	
-    -   exceeded-max-duration	
-    -   silence-timed-out	
-
-NOTE: It is best to determine success based on whether it belongs to the "Success Category", because things can go wrong on many levels other than that the users did not pick up
-
-
-
-
 ## Sabbir notes 6/10
-
-Order fail -> rabbit mq -> Task executor -> Check the settings -> 
-
-webhook -> rabbit mq -> 
 
 MY TASK:
 task executor -> service -> takes in phone number, json object, return the call ID -> DONE
@@ -96,7 +61,6 @@ store the state -> when it is ended -> store whether it is picked up -> when
 
 Expose more info to the voice agent.
 
-Pause at the beginning. 
 
 
 ## Sabbir whole flow 6/13
@@ -118,5 +82,8 @@ redrop -> reinsert it
 
 based on the conversation to judge 
 
-i will redrop and that is it. 
+Agent will say I will redrop and that is it. 
+
 Make sure to implement the last 4 digit thing
+
+Pause at the beginning. 
