@@ -25,3 +25,28 @@ squareintegraionservicenew.java
 For onboarding process, go to dispatch dashboard, check the integration there. Most of the times is the authcontroller that controls the onboarding process. 
 
 
+
+## 6/17
+### Square
+merchant email -> company id
+
+If the new_state is PROPOSED, we discard. (customer add into the cart), we only care about new_state that is OPEN. Search using regex -> OPEN. (Basically make the data field contains the string "new_state\":\"OPEN") (fixed the escape as needed)
+
+Order's GUID -> Square id 
+
+When order event comes -> we cache the order task -> orderGuid(order id from Square) -> Check if the order GUID already exisits in Redis, if it already exists, we  discard. If not we cache the GUID in the Redis. -> We retrieve the order details from SQUARE for other necessary information. -> After fetching the order detail, we add the details into the order_event_log. 
+
+In order to insert into the order_info -> Map the order detail from the third party to our own structure -> after the mapping -> we publish to the MQ for the order-insertion service to consume -> when url is '/publish-to-rabbit' (DATA EXCHANGE): We are sending to rabbitMQ, from this point integration-service's task is DONE. -> after the order-insertion service completes, it will publish back to the MQ, the integration will listen to that response, then it will add the log for "ORDER_CREATED" event. Then this will be cached into Redis again in case for cancelling event. (key: value = squareGUID: ourOrderId). 
+
+For the url fields, they don't necessarily share the same Base Url. 
+
+#### Onboarding Flow for Square
+When you click the connect on our dispatch website -> api.shipday.com/square/connect -> redirects to square endpoint -> connectionsquareup.com/oarth2/authorize?..... 
+
+for square we use platform_token table in the DB, if it is revoked, then that means the connection is deleted. 
+
+
+upstream (both polling and webhook) -> we are receiving order vs downstream (we are assigning order to third party driver uber or doordash)
+
+Uber Eats
+
