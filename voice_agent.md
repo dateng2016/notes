@@ -87,3 +87,8 @@ Agent will say I will redrop and that is it.
 Make sure to implement the last 4 digit thing
 
 Pause at the beginning. 
+
+
+## 6.18
+third party -> 
+Check the refund request -> third_party_refund_request
