@@ -92,3 +92,7 @@ Pause at the beginning.
 ## 6.18
 third party -> 
 Check the refund request -> third_party_refund_request
+
+
+## 6.19
+Call end customer -> order info, customer info, replacement order/ refund -> then ask merchant 
