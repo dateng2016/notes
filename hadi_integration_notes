@@ -69,8 +69,10 @@ If we get the same event as before, we throw exceptions because it means that th
 
 If validation succeeds -> we will cache the order to Redis. (This means that this task is successfully processed)
 
+How to diagnose a problem -> from email get company_id -> 
 
+NOTE: Only valid order types are inserted, we discard ones that are not valid. 
 
-
+fulfillmentType(v1) / type(v2) -> only allow DELIVERY_BY_RESTAURANT DELIVERY_BY_MERCHANT (depends on the version of API) or PICKUP (v1) PICK_UP (v2). (We don't care about deliveries by Ubereats and such) 
 
 
