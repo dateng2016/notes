@@ -95,4 +95,19 @@ Check the refund request -> third_party_refund_request
 
 
 ## 6.19
+
 Call end customer -> order info, customer info, replacement order/ refund -> then ask merchant 
+
+
+## 6.19 Voice Agent Implementation
+
+Send in Redis for rate limit -> ratelimit service. -> add new method 
+
+Make sure the date in UTC time
+
+whitelist -> add another col in the voiceagent setting table -> 
+
+Create a new queue -> Shaon create queues. 
+
+
+

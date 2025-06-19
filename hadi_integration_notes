@@ -1,5 +1,7 @@
 # Hadi 6/12
 
+platform_token and restaurant_mapping are the two Main mapping tables in MySQL
+
 ## MONGO
 
 ### External_order_log 
@@ -75,4 +77,21 @@ NOTE: Only valid order types are inserted, we discard ones that are not valid.
 
 fulfillmentType(v1) / type(v2) -> only allow DELIVERY_BY_RESTAURANT DELIVERY_BY_MERCHANT (depends on the version of API) or PICKUP (v1) PICK_UP (v2). (We don't care about deliveries by Ubereats and such) 
 
+If no tax -> set it to 0
+
+After the order-insertion service successfully inserted order, it will send back a message to the MQ and give the Order ID. -> THEN the integration service will add ORDER CREATE in the order_event_log MongoDB. 
+
+
+Ubereats has 2 mapping table -> ubereats_mapping + platform_token
+
+platform_token mainly contains access_token + refresh_token
+
+ubereat_mapping contains additional info like address, phone number, etc.
+
+Our merchant might have multiple stores at UberEats. 
+
+When we receive the webhook from UberEats -> It contains store GUID (it will be the 'user_id' in the JSON object)
+
+
+When we receive 
 
