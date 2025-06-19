@@ -48,5 +48,29 @@ for square we use platform_token table in the DB, if it is revoked, then that me
 
 upstream (both polling and webhook) -> we are receiving order vs downstream (we are assigning order to third party driver uber or doordash)
 
-Uber Eats
+square is a ecommerce site -> each restaurant has their own dedicated website. 
+
+## Uber Eats
+This is a marketplace -> single APP -> different restaurants (no dedicated websites for each restaurant)
+
+Order comes from webhook
+
+UbereatsController.java (only one endpoint)
+
+When order comes in -> dump log to the `external_order_log` -> Will fetch the order via API call (add `order_event_log`) 
+
+the inital order event will contains whether you should use API v1 or v2(in the resourceHref). 
+
+(DTO -> data tranfer object -> use this to transfer from one strcuture to another structure)
+
+We will validate the order data -> if fails -> throws EXCEPTION -> if success -> rabbit MQ -> 
+
+If we get the same event as before, we throw exceptions because it means that this event is already processed. 
+
+If validation succeeds -> we will cache the order to Redis. (This means that this task is successfully processed)
+
+
+
+
+
 
