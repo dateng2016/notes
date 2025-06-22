@@ -122,3 +122,12 @@ If only third party will trigger, then all the calls for orders can be refunded?
 How can I fail an order other than driver failing
 
 
+Why are we only selecting from third party order table
+
+what is external third party and internal third party/connect
+
+For third party orders, fail via webhook 
+
+shpiday connect -> fail -> delivery company uses driver app. 
+
+
