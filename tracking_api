@@ -1,0 +1,17 @@
+Talk to Camilo for support tickets
+
+api.shipday.com
+
+Inside controller -> external -> OrderControllerExternal + CarrierControllerExternal 
+
+Report service already has this developed  -> ETAController 
+
+Use Adem's doc
+
+Heavy loading needs to be done in report service
+
+api service (qt-dispatch) -> check auth, rate limit -> 
+
+3 req / min / order -> Check with Adem 
+
+

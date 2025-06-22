@@ -111,3 +111,14 @@ Create a new queue -> Shaon create queues.
 
 
 
+## 6.22 Shaon
+
+What kind of orders will trigger calls?
+
+what is is_internal field mean?
+
+If only third party will trigger, then all the calls for orders can be refunded?
+
+How can I fail an order other than driver failing
+
+
