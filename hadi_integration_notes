@@ -95,3 +95,35 @@ When we receive the webhook from UberEats -> It contains store GUID (it will be 
 
 When we receive 
 
+
+## 6.23
+
+Some merchants have their own platforms, they use external API to insert their orders. They will have their platform names to be null.
+
+We will not see any code for A-Team, last_app and xxx??? -> They use external API for integration
+
+## Shopify
+
+We have an app published on shopify. We use webhooks. 
+
+We have a nodejs app called shopify-app-rewrite. This app receives the order, validates (Shopify requires node js app?) -> pushes the order to rabbit MQ to integration project -> We have a listener at integration project, and handles from there. -> 
+
+
+###  Inside nodejs project 
+gdpr.js 
+APP_UNINSTALLED -> when the merchant do not want us anymore. 
+
+ORDER_CREATE -> Do validations such as allowed delivery methods and such -> send order to MQ
+
+During the test of order creation, there will be logs -> It will using incoming_webhook_logs (PLURAL!!).
+
+### Integration project
+
+Receives the order message from nodejs. ShopifyService.java handleOrderInsert. 
+
+Initially it will dump the log to the external order log -> this will be the same as incoming_webhook_logs -> uuid is created in the nodejs application -> (the records in the two logs are exactly the same)
+
+We pretty much do not need incoming_webhook_logs -> Just need external order logs.
+
+TODO: Next week -> GLORIA
+

@@ -1,5 +1,3 @@
-Talk to Camilo for support tickets
-
 api.shipday.com
 
 Inside controller -> external -> OrderControllerExternal + CarrierControllerExternal 
@@ -15,3 +13,63 @@ api service (qt-dispatch) -> check auth, rate limit ->
 3 req / min / order -> Check with Adem 
 
 
+
+📥 HTTP Request
+Method: GET
+URL: https://report.shipday.com/eta/order/progress/{encryptedOrderId}?isStaticDataRequired=false
+ 
+ 
+carrier	Carrier	Delivery person
+
+
+
+isExpired	Boolean	Indicates if the tracking session is expired.
+ 
+🧾 Order
+Field	Type	Description
+orderNumber	String	Unique order ID or code.
+ 
+👤 Customer
+Field	Type	Description
+name	String	Full name of the customer.
+address	String	Delivery address.
+latitude	Number	Latitude of delivery location.
+longitude	Number	Longitude of delivery location.
+ 
+🍽️ Restaurant
+Field	Type	Description
+name	String	Restaurant name.
+address	String	Address of the restaurant.
+latitude	Number	Latitude of restaurant location.
+longitude	Number	Longitude of restaurant location.
+ 
+🚚 Carrier (Static)
+Field	Type	Description
+id	Integer	Unique carrier ID or -1 if unknown.
+name	String	Carrier or third-party driver name.
+phoneNumber	String	Phone number for contact.
+imagePath	String	Path or name of carrier image.
+ 
+ 
+📦 DynamicProgressInfo
+Provides real-time or updated information about the delivery progress and ETA.
+ 
+Field	Type	Description
+order	OrderStatus	Time-stamped status updates.
+carrier	CarrierLocation	Real-time location & contact info.
+estimatedTimeInMinutes	String	ETA in minutes (or "INF" if not available).
+detailEta	Object	Detailed ETA object from backend model.
+ 
+⏱️ OrderStatus
+Field	Type	Description
+startTime	String	ISO time when delivery was started.
+pickedTime	String	Time of pickup.
+arrivedTime	String	Time carrier arrived at destination.
+deliveryTime	String	Time of successful delivery.
+failedDeliveryTime	String	Time of failed delivery (if any).
+status	String	Enum status like PLACED, DELIVERED, etc.
+ 
+📍 CarrierLocation
+Field	Type	Description
+latitude	Number	Carrier's real-time latitude.
+longitude	Number	Carrier's real-time longitude.
