@@ -131,3 +131,19 @@ For third party orders, fail via webhook
 shpiday connect -> fail -> delivery company uses driver app. 
 
 
+##
+Default ON
+
+
+Block third party driver
+
+
+
+## Questions 6.29
+
+Should I use API or MQ for this?
+
+Is there existing tables
+
+Existing Google Sheet?
+

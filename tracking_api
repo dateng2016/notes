@@ -73,3 +73,24 @@ status	String	Enum status like PLACED, DELIVERED, etc.
 Field	Type	Description
 latitude	Number	Carrier's real-time latitude.
 longitude	Number	Carrier's real-time longitude.
+
+
+Use Flavor for subscription type check
+
+get plan name from the compnay info table
+
+
+getplaninfo from planinfo.java from the lib
+
+Check if it is business advance flavor -> validate
+
+1.15.0
+
+
+5 redis servers
+
+Make sure that I am in the security group
+
+Use public IP address from AWS
+
+
