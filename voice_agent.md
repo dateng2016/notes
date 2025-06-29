@@ -147,3 +147,6 @@ Is there existing tables
 
 Existing Google Sheet?
 
+DB schema Design????
+
+
