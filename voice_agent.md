@@ -149,4 +149,6 @@ Existing Google Sheet?
 
 DB schema Design????
 
+What info should be saved in the DB
 
+What info should be sent to the support team?
