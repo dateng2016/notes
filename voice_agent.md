@@ -1,9 +1,6 @@
 ## Questions
 
--   Where should we get the knowledge base for this agent?
 -   For "Industry Filter", how to do the filter?
--   Can we get the name of the user from the DB?
--   What should we do about the reactivation discount or extended trial?
 -
 
 ### For Vahag
@@ -145,13 +142,42 @@ Should I use API or MQ for this?
 
 Is there existing tables
 
-Existing Google Sheet?
-
-DB schema Design????
+Do we have existing Google Sheet?
 
 What info should be saved in the DB
 
+Solution:
+id
+company_id
+carrier_id -> ?????
+reason
+order_id
+third_party_delivery_order_id -> What is this, where do I find this in the DB?
+remarks
+status -> Any Enum for this?
+request_type -> ENUM?
+time -> (request time?) bigint type??????
+
 What info should be sent to the support team?
 
+Everything Above?
 
-TODO: Need to come up with solutions
+shipday connect -> manage merchant -> add merchant -> (account email is the import one) -> 
+
+
+merchant -> setting -> third-party-delivery -> get 
+
+
+## Outreach Agent for Old Lead 
+
+### Flow
+
+1. Run a scheduler to get the old lead -> Gather info about the user (phone,  -> Publish event 
+2. Make outbound calls
+3. If needed, send meeting invitation link via SMS
+4. Discount code (Need to discuss with the team)
+
+NOTE: Phone number need to be in E164, suggest that we only call the US customer for now.
+
+
+
