@@ -181,3 +181,42 @@ NOTE: Phone number need to be in E164, suggest that we only call the US customer
 
 
 
+
+## 7.5
+
+-   Where should the API to send the schedule link be?
+-   Where and how to set up scheduler to find out the company to call
+-   Currently have 20 concurrency. Will not be calling everyone at the same time. Need to design.
+-   How to design the calling again part? Similar to the previous voice agent with 3 trials?
+-   How to generate the discount code
+
+**Current outreach agent flow**
+
+Scan the DB -> call the customer -> Book appointment -> send appointment link via SMS -> Send discount code -> send via SMS
+
+
+
+## Talk with kamarul
+qt dispatch -> companyInfoController -> line 28 Do NOT publish event, enter to a DB table to log which account to make the call
+
+Time restriction 
+
+Run a scheduler -> 5 phone calls per ten minutes
+
+Task executor will implement the features. 
+
+Ask Adem about time restriction for SMS and Phone Calls
+
+Need to figure out something else if restriction is needed.
+
+in scheudler project
+
+Pick a time that is not conflict others
+
+for discount go to company_info table -> 
+
+redirect to the sales team. 25% if they upgrade this week. 
+
+Can send email to both support and sales
+
+
