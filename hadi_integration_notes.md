@@ -127,3 +127,34 @@ We pretty much do not need incoming_webhook_logs -> Just need external order log
 
 TODO: Next week -> GLORIA
 
+## Gloria
+
+This is done through webhook. 
+
+Mapping in a very primitive way
+
+When parsing the payload to mapper -> json object helper?
+
+GlobalFoodIntegrationMapper -> help for mapping -> MappedToOrderInfo is the helper function 
+
+IntegratorHelper.java -> Doing the insertion in DB. Input is JsonData from the mapper, output is insertion of the order in DB.
+
+Insert delivery order -> done by carrier
+
+pickup order -> No carrier, done by the customer. 
+
+insertDeliveryOrder -> insert it to DB -> 
+
+Check integration controller. -> creating + update 
+
+U -> means update  (the first 2 methods) 
+P -> Means creation 
+
+
+Onboarding -> Done from gloria food. Place the api key from shipday wizard. (inside the gloria platform) 
+
+User account mapping through our API key.
+
+
+
+
