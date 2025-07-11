@@ -220,3 +220,14 @@ redirect to the sales team. 25% if they upgrade this week.
 Can send email to both support and sales
 
 
+## 7.11 AI Receptionist
+
+Take their info -> name address phone
+
+Check for voice selection 
+
+Operating hours
+
+
+
+
