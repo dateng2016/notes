@@ -157,4 +157,47 @@ User account mapping through our API key.
 
 
 
+## Lightspeed
+
+2 integration: x-series (e-commerce), k-series (restaurant)
+
+
+### K-series
+
+LightKController.java
+
+receive webhook
+
+first we get mapping. We have a separate table for mapping. light_k_mapping. 
+
+For mongo:
+notification type: (inside data in the mongo log)
+CLOSE, UPDATE, OPEN
+
+account: 
+
+businessLocationId is used for mapping the restaurant.
+
+
+On-boarding process: like square. Initiated from our side. we initiate, light speed send us one-time token.(refresh token) We get the refresh token, business location ID. 
+
+When we connect, we send the api key of the shipday to light speed. /oauth/authorize   After the user logs in. light speed will then send the code / token to us. 
+
+2 tables -> light_k_mapping & light_k_token (parent table)
+
+for every merchant, one entry in the token table 
+
+for the mapping tables, one merchant can have multiple entries. 
+
+different business_location_id means different stores 
+
+During onboarding. the merchant selects what kind of profiles they want to import to shipday. (active profiles). Inside the data payload in mongo -> there wiill be info for that -> accountProfileName + accountProfielId
+
+When the webhook comes in, we check if the profile matches the active profiels recrod that we have on hand. if not, we discard. 
+
+If the active_profile = null -> we are allowing all orders. 
+
+When we receive the event, we log to external_order_log, we got all the info needed, we do not need to call the external API again to fetch extra info. 
+
+
 
