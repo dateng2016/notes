@@ -239,3 +239,6 @@ User will add business phone -> We will pull the info from google. -> When the p
 ## 7.15 Adem AI Receptionist
 
 
+If need to send sms to manager to feedback complaints or compliments. 
+
+If catering is needed -> name phone -> email / sms
