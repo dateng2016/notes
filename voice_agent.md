@@ -272,6 +272,10 @@ Customer picks up the call
 4 Webhook
     - Initial webhook -> fetch dynamic variable
     - API for order status check 
+    - End-call webhook
+        - Complaints, Kudos?
+        - Send user order URL?
+        - Send user Map URL?
 
 5. DB Design
     - AI_receptionist_agent_settings
