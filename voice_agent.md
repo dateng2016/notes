@@ -234,3 +234,8 @@ Operating hours
 ## 7.14 Oliver Google Maps Sync
 
 User will add business phone -> We will pull the info from google. -> When the pulling is completed, the user will see their public info. Next the user will preview the agent voice. -> 
+
+
+## 7.15 Adem AI Receptionist
+
+
