@@ -242,3 +242,42 @@ User will add business phone -> We will pull the info from google. -> When the p
 If need to send sms to manager to feedback complaints or compliments. 
 
 If catering is needed -> name phone -> email / sms
+
+## 7.15 Initial Flow Design
+
+Customer picks up the call 
+
+1. Check the time -> normal greeting / after-hour greeting 
+
+2. Check intention 
+
+3. Functionalities:
+    - General questions (store hours, policy check, etc)
+    - Order status check -> API call
+    - Transfer to live agent for any necessary issues
+    - Place an order 
+        - `supportPhoneOrder` == true -> Phone call
+        - `supportPhoneOrder` == false -> Send link after the call
+    - Reservation 
+        - if catering -> transfer
+        else
+        - `supportReservation` == true -> Phone Call
+        - `supportReservation` == false -> Reject
+    - Direction
+        - We can give the address as per request
+        - We can also send out SMS with a Google Map URI
+    - Taking complaints or Kudos 
+        - Go to email/SMS???.
+
+4 Webhook
+    - Initial webhook -> fetch dynamic variable
+    - API for order status check 
+
+5. DB Design
+    - AI_receptionist_agent_settings
+        - company_id, agent_phone_number, transfer number
+        - agent_phone_number(this can be used as primary key), company_id, transfer_number, created_at, updated_at, active_status. 
+    - google_business_info_for_ai_receptionist (This should be updated daily)
+        - TBD
+
+        
