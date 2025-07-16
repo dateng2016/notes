@@ -201,3 +201,57 @@ When we receive the event, we log to external_order_log, we got all the info nee
 
 
 
+## Polling
+
+We periodically fetch orders from the platform. We only have 3 or 4 that use polling. Adelo Adora Odoo. 
+
+There is a separate project for polling service. Currently under migration to integration-scheduler + task-executor. 
+
+ingegration-scheduler -> task executor -> integration project
+
+Every once a while -> sync -> get the mapping -> send the poll reuest to the task-executor 
+
+At the task-executor there are listeners. First there is a order_poll_log. This is the first log that comes in.
+
+Then do the actual fetch order by calling the external API. 
+
+### Odoo
+
+The overlap window is 24 hours, 12 hours before the current and 12 hours after. We have this due to timezone differences. (To accomedate different timezones for different customers.)
+
+Check if it has order in the payload. 
+
+Check the cache repo. Check if the order is already there. 
+
+If the order is not already there, we will send it to integration project and cache it to the cache repository.
+
+In the integration project, there is a listener OdooListner, First dump it to external_order_event. Then the rest is the same structure with other ones. Odoo only has delivery order, no pickup order. 
+
+
+### Aldelo 
+
+NOTE: Listener either listens to polling project or task-executor project, 
+
+The structure is pretty much the same. 
+
+This also uses order_poll_log for the inital event. 
+
+The restaurant mapping table is in cache for aldelo. The cache is populated at start time from DB. From then on, it will only fetch from cache. If a new mapping comes in -> there is a cache resync event. (Restaurant_sync listener)
+
+Overlap for aldelo is only 15 minutes. 
+
+### Adora
+
+this also uses order_poll_log. It's in capital -> ADORA
+
+
+
+
+
+
+
+
+
+
+
+
