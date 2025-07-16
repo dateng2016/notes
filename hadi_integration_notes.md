@@ -244,14 +244,9 @@ Overlap for aldelo is only 15 minutes.
 
 this also uses order_poll_log. It's in capital -> ADORA
 
+In the API call, it fetches all the order for a single day. Based on the UTC date. 
 
+During the polling, we need to put the offset into consideration. Check the operational_area table. We need to use the customer's time zone eventually. 
 
-
-
-
-
-
-
-
-
+The rest should follow the similar structure with the other 2. 
 
