@@ -270,8 +270,11 @@ Customer picks up the call
         - Go to email/SMS???.
 
 4 Webhook
-    - Initial webhook -> fetch dynamic variable
-    - API for order status check 
+
+    - Initial webhook -> fetch dynamic variable.
+    
+    - API for order status check
+
     - End-call webhook
         - Complaints, Kudos?
         - Send user order URL?
@@ -284,4 +287,37 @@ Customer picks up the call
     - google_business_info_for_ai_receptionist (This should be updated daily)
         - TBD
 
-        
+inbound webhook -> webhook server.
+
+Rate limiting at webhook server. -> Let Adem decide.
+
+
+Google Map
+
+
+
+Manual Input:
+
+1. Menu (Link or actual menu?)
+2. Phone number
+3. Order URL
+4. Store Name
+5. Phone order policy
+6. Reservation policy
+7. Whether the store supports catering order
+8. Specific plicy regarding reserving should be manulaly input (reservable or not is in google)
+9. standard/after-hour greeting
+10. transfer-number (e164 format)
+
+
+
+
+From Google:
+1. address
+2. payment option
+3. reserable
+4. 
+
+Make sure to add the phoneReseravation flag
+
+
