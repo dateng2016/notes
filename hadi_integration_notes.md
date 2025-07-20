@@ -250,3 +250,5 @@ During the polling, we need to put the offset into consideration. Check the oper
 
 The rest should follow the similar structure with the other 2. 
 
+
+### 7.20 Motaher Toast:
