@@ -253,4 +253,27 @@ The rest should follow the similar structure with the other 2.
 
 ### 7.21 Motaher Toast:
 
+They send webhooks for any event.
+
+Back then we used json objects -> currently trying to do the migration to the integration service for insertion.
+
+ToastController.java
+
+webhook/order/restaruantguid is for polling, we do not use it anymore
+
+/webhook/order is for the webhook
+
+
+/order/poll is for when our system is down, we will do some polling for a time range and then insert the orders. 
+
+### On boarding flow
+
+Use install shipday app on their app. they provide their api key. we will receive at the /webhook/restaurant controller. Then it goes to toastmapping table. `restaurantGuid` is the key field
+
+/synAllCompany  controller, this is called by the integration-scheduler project.
+
+It does NOT send to the order-insertion service.
+
+For toast it uses the JSONObject not order info stuff. 
+
 
