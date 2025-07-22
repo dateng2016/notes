@@ -277,3 +277,31 @@ It does NOT send to the order-insertion service.
 For toast it uses the JSONObject not order info stuff. 
 
 
+## 6.22 Motaher Adora Driver Sync
+
+employee sync is similar to toast. There is no order update api for adora.
+
+order-polling-service project
+
+AdoraService.java
+
+For adora we only have date option for order fetching. 
+
+If the order is assigned to driver -> integration service. 
+
+They use our system to assign orders to drivers. But for adora they assign carriers at Adora site. 
+
+Checkout AdoraOrderAPICallerNew.java 
+
+When they assign driver at their site, the event comes to us and the we assign it in the background to the same driver. There is a driver mapping table to make sure that we assign to the same driver. 
+
+If the order is not assigned (scheduled for later) -> we will save it to redis. we start processing the item shortly before the scheduled the time.(90 minutes) we process orders that is going to happen within the next 90 minutes.
+
+in the assignment-polling, we sync every 15 seconds. it's faster. The goal is to assign driver / change driver in time. 
+
+entry -> AdoraService.java from the order-polling-service
+entry -> assignment-polling project -> 
+entry for employee sync -> integration-scheduler -> AdoraDriverSync.java
+
+
+If the order is 
