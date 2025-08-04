@@ -323,22 +323,15 @@ Make sure to add the phoneReseravation flag
 
 ## 7/30
 
-- Edit opening hours?
-- Add accept_dine_in
 - Modify the payment options based on what I sent you (NFC, cashonly) -> ADEM
-- add reservable
-- Phone order checkbox?
-- Modify the initial business details -> we don't have photos of the store. Display Name + Address + Google Map URL -> ADEM
-
-without picture -> current fields are good
 
 - Do we need agent name? The only time we mention this is at the beginning -> ADEM
 YES
+
 - You have catering, takeout, delivery, dinein,  selection twice -> ADEM
 
 Only keep the second one
 
-- Reservation link should be optional -> ADEM
 
 
 
@@ -346,16 +339,29 @@ Only keep the second one
 - Takeout and Delivery policy? Is that necessary? -> ADEM
 - Dine in policy? Is that necessary? -> ADEM
 
-hide it for now
+hide them for now
 
 - after-hour greeting -> end the call? -> ADEM
 
-end the call logic.
+modify the end-call logic.
 
 
 TODO: 
 - add accept event boolean field
 - Add catering policy
 - Add accept dine in
+
+
+## 8.4 Moin Adem
+
+In-bound sales agent
+
+Should ask questions about business.
+trasnfer number
+saying that people will follow up, everyone
+
+name and phone number, business type, country and states
+
+
 
 
