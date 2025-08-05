@@ -357,7 +357,9 @@ TODO:
 In-bound sales agent
 
 Should ask questions about business.
+
 trasnfer number
+
 saying that people will follow up, everyone
 
 name and phone number, business type, country and states
@@ -365,3 +367,11 @@ name and phone number, business type, country and states
 
 
 
+## 8.5 Shahriar
+
+analystics DB -> daily_sales_lead
+
+inbound_lead.py last API
+
+
+Use a differnt source (update the api in the analytics service)
