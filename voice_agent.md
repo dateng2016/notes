@@ -375,3 +375,10 @@ inbound_lead.py last API
 
 
 Use a differnt source (update the api in the analytics service)
+
+## 8.13 AI Receptionist Frontend Setup Notes
+
+- Modify the business hours
+- Ordering link is not rendered in the frontend page
+- Get rid of the menu link in the takeout section
+- Hide the 3 sections -> dine-in takeout delivery
