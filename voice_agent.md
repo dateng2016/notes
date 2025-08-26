@@ -58,55 +58,47 @@ store the state -> when it is ended -> store whether it is picked up -> when
 
 Expose more info to the voice agent.
 
-
-
 ## Sabbir whole flow 6/13
 
-DB schema -> 
+DB schema ->
+
 1. failed_order_alert_agent_settings
 2. voice_agent_call (also include the future voice agents)
-	request_id -> this is the UUID
-	
+   request_id -> this is the UUID
 
 task-executor
 failedOrdernotifylistenr.java -> failedorderalertservice.java
 
+TODO: add the long_order_number change requested by Adem.
 
-TODO: add the long_order_number change requested by Adem. 
+redrop -> reinsert it
 
+based on the conversation to judge
 
-redrop -> reinsert it 
-
-based on the conversation to judge 
-
-Agent will say I will redrop and that is it. 
+Agent will say I will redrop and that is it.
 
 Make sure to implement the last 4 digit thing
 
-Pause at the beginning. 
-
+Pause at the beginning.
 
 ## 6.18
-third party -> 
-Check the refund request -> third_party_refund_request
 
+third party ->
+Check the refund request -> third_party_refund_request
 
 ## 6.19
 
-Call end customer -> order info, customer info, replacement order/ refund -> then ask merchant 
-
+Call end customer -> order info, customer info, replacement order/ refund -> then ask merchant
 
 ## 6.19 Voice Agent Implementation
 
-Send in Redis for rate limit -> ratelimit service. -> add new method 
+Send in Redis for rate limit -> ratelimit service. -> add new method
 
 Make sure the date in UTC time
 
-whitelist -> add another col in the voiceagent setting table -> 
+whitelist -> add another col in the voiceagent setting table ->
 
-Create a new queue -> Shaon create queues. 
-
-
+Create a new queue -> Shaon create queues.
 
 ## 6.22 Shaon
 
@@ -118,23 +110,19 @@ If only third party will trigger, then all the calls for orders can be refunded?
 
 How can I fail an order other than driver failing
 
-
 Why are we only selecting from third party order table
 
 what is external third party and internal third party/connect
 
-For third party orders, fail via webhook 
+For third party orders, fail via webhook
 
-shpiday connect -> fail -> delivery company uses driver app. 
-
+shpiday connect -> fail -> delivery company uses driver app.
 
 ##
+
 Default ON
 
-
 Block third party driver
-
-
 
 ## Questions 6.29
 
@@ -162,25 +150,20 @@ What info should be sent to the support team?
 
 Everything Above?
 
-shipday connect -> manage merchant -> add merchant -> (account email is the import one) -> 
+shipday connect -> manage merchant -> add merchant -> (account email is the import one) ->
 
+merchant -> setting -> third-party-delivery -> get
 
-merchant -> setting -> third-party-delivery -> get 
-
-
-## Outreach Agent for Old Lead 
+## Outreach Agent for Old Lead
 
 ### Flow
 
-1. Run a scheduler to get the old lead -> Gather info about the user (phone,  -> Publish event 
+1. Run a scheduler to get the old lead -> Gather info about the user (phone, -> Publish event
 2. Make outbound calls
 3. If needed, send meeting invitation link via SMS
 4. Discount code (Need to discuss with the team)
 
 NOTE: Phone number need to be in E164, suggest that we only call the US customer for now.
-
-
-
 
 ## 7.5
 
@@ -194,16 +177,15 @@ NOTE: Phone number need to be in E164, suggest that we only call the US customer
 
 Scan the DB -> call the customer -> Book appointment -> send appointment link via SMS -> Send discount code -> send via SMS
 
-
-
 ## Talk with kamarul
+
 qt dispatch -> companyInfoController -> line 28 Do NOT publish event, enter to a DB table to log which account to make the call
 
-Time restriction 
+Time restriction
 
 Run a scheduler -> 5 phone calls per ten minutes
 
-Task executor will implement the features. 
+Task executor will implement the features.
 
 Ask Adem about time restriction for SMS and Phone Calls
 
@@ -213,66 +195,60 @@ in scheudler project
 
 Pick a time that is not conflict others
 
-for discount go to company_info table -> 
+for discount go to company_info table ->
 
-redirect to the sales team. 25% if they upgrade this week. 
+redirect to the sales team. 25% if they upgrade this week.
 
 Can send email to both support and sales
-
 
 ## 7.11 AI Receptionist
 
 Take their info -> name address phone
 
-Check for voice selection 
+Check for voice selection
 
 Operating hours
 
-
-
-
 ## 7.14 Oliver Google Maps Sync
 
-User will add business phone -> We will pull the info from google. -> When the pulling is completed, the user will see their public info. Next the user will preview the agent voice. -> 
-
+User will add business phone -> We will pull the info from google. -> When the pulling is completed, the user will see their public info. Next the user will preview the agent voice. ->
 
 ## 7.15 Adem AI Receptionist
 
-
-If need to send sms to manager to feedback complaints or compliments. 
+If need to send sms to manager to feedback complaints or compliments.
 
 If catering is needed -> name phone -> email / sms
 
 ## 7.15 Initial Flow Design
 
-Customer picks up the call 
+Customer picks up the call
 
-1. Check the time -> normal greeting / after-hour greeting 
+1. Check the time -> normal greeting / after-hour greeting
 
-2. Check intention 
+2. Check intention
 
 3. Functionalities:
     - General questions (store hours, policy check, etc)
     - Order status check -> API call
     - Transfer to live agent for any necessary issues
-    - Place an order 
+    - Place an order
         - `supportPhoneOrder` == true -> Phone call
         - `supportPhoneOrder` == false -> Send link after the call
-    - Reservation 
+    - Reservation
         - if catering -> transfer
-        else
+          else
         - `supportReservation` == true -> Phone Call
         - `supportReservation` == false -> Reject
     - Direction
         - We can give the address as per request
         - We can also send out SMS with a Google Map URI
-    - Taking complaints or Kudos 
+    - Taking complaints or Kudos
         - Go to email/SMS???.
 
 4 Webhook
 
     - Initial webhook -> fetch dynamic variable.
-    
+
     - API for order status check
 
     - End-call webhook
@@ -283,7 +259,7 @@ Customer picks up the call
 5. DB Design
     - AI_receptionist_agent_settings
         - company_id, agent_phone_number, transfer number
-        - agent_phone_number(this can be used as primary key), company_id, transfer_number, created_at, updated_at, active_status. 
+        - agent_phone_number(this can be used as primary key), company_id, transfer_number, created_at, updated_at, active_status.
     - google_business_info_for_ai_receptionist (This should be updated daily)
         - TBD
 
@@ -291,10 +267,7 @@ inbound webhook -> webhook server.
 
 Rate limiting at webhook server. -> Let Adem decide.
 
-
 Google Map
-
-
 
 Manual Input:
 
@@ -309,48 +282,41 @@ Manual Input:
 9. standard/after-hour greeting
 10. transfer-number (e164 format)
 
-
-
-
 From Google:
+
 1. address
 2. payment option
 3. reserable
-4. 
+4.
 
 Make sure to add the phoneReseravation flag
 
-
 ## 7/30
 
-- Modify the payment options based on what I sent you (NFC, cashonly) -> ADEM
+-   Modify the payment options based on what I sent you (NFC, cashonly) -> ADEM
 
-- Do we need agent name? The only time we mention this is at the beginning -> ADEM
-YES
+-   Do we need agent name? The only time we mention this is at the beginning -> ADEM
+    YES
 
-- You have catering, takeout, delivery, dinein,  selection twice -> ADEM
+-   You have catering, takeout, delivery, dinein, selection twice -> ADEM
 
 Only keep the second one
 
-
-
-
-- Should we split the takeout + delivery policies into 2 text boxes? -> ADEM
-- Takeout and Delivery policy? Is that necessary? -> ADEM
-- Dine in policy? Is that necessary? -> ADEM
+-   Should we split the takeout + delivery policies into 2 text boxes? -> ADEM
+-   Takeout and Delivery policy? Is that necessary? -> ADEM
+-   Dine in policy? Is that necessary? -> ADEM
 
 hide them for now
 
-- after-hour greeting -> end the call? -> ADEM
+-   after-hour greeting -> end the call? -> ADEM
 
 modify the end-call logic.
 
+TODO:
 
-TODO: 
-- add accept event boolean field
-- Add catering policy
-- Add accept dine in
-
+-   add accept event boolean field
+-   Add catering policy
+-   Add accept dine in
 
 ## 8.4 Moin Adem
 
@@ -364,21 +330,22 @@ saying that people will follow up, everyone
 
 name and phone number, business type, country and states
 
-
-
-
 ## 8.5 Shahriar
 
 analystics DB -> daily_sales_lead
 
 inbound_lead.py last API
 
-
 Use a differnt source (update the api in the analytics service)
 
 ## 8.13 AI Receptionist Frontend Setup Notes
 
-- Modify the business hours
-- Ordering link is not rendered in the frontend page
-- Get rid of the menu link in the takeout section
-- Hide the 3 sections -> dine-in takeout delivery
+-   Modify the business hours
+-   Ordering link is not rendered in the frontend page
+-   Get rid of the menu link in the takeout section
+-   Hide the 3 sections -> dine-in takeout delivery
+
+## Moin 8.26
+
+-   Make the google business there again while changing.
+-   Set up google sheet
