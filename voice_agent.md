@@ -345,16 +345,19 @@ Use a differnt source (update the api in the analytics service)
 -   Get rid of the menu link in the takeout section
 -   Hide the 3 sections -> dine-in takeout delivery
 
-## Moin 8.26
-
--   Make the google business there again while changing.
--   Set up google sheet
 
 ## TODO 8.27
 
 - Get the business name in the close message. Ask GPT. "Unfortunately, we are closed..." Make sure it says "Thank you for calling xyz"
-- Call around to see how it looks like.
-- Set up the name for the agent in Retell. 
-- Area code for phone numbers
-- Get rid of the `live agent` thing and replace with something more natural. 
+
+
+## TODO 8.30
+
+- Give the current local time and opening status
+- Call around to see how the first message looks like
+- Attach recording url for inbound sales agent
+- Transfer message -> Let me connect you with someone who can help you with this
+
+
+
 
