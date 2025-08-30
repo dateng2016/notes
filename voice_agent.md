@@ -345,19 +345,20 @@ Use a differnt source (update the api in the analytics service)
 -   Get rid of the menu link in the takeout section
 -   Hide the 3 sections -> dine-in takeout delivery
 
-
 ## TODO 8.27
 
-- Get the business name in the close message. Ask GPT. "Unfortunately, we are closed..." Make sure it says "Thank you for calling xyz"
-
+-   Get the business name in the close message. Ask GPT. "Unfortunately, we are closed..." Make sure it says "Thank you for calling xyz"
 
 ## TODO 8.30
 
-- Give the current local time and opening status
-- Call around to see how the first message looks like
-- Attach recording url for inbound sales agent
-- Transfer message -> Let me connect you with someone who can help you with this
+-   Call around to see how the first message looks like
 
-- limit the length of the conversation and try to offer to talk to sales. Try to limit the conversation. After 2 or 3 questions. (This is not working so well. Need to see if it can be tweaked further)
+    -   Domino -> "Hello, and thank you for calling {{businessName}}, I'm Eva, your friendly artificial intelligence agent. This call is being recorded for quality and training purposes. How may I assist you today?"
+    -   Papa John's -> (this one simply says papa johns on xxx street)
+    -   Chickfila -> 
+    -   pizzahut -> 
 
-
+-   Transfer message -> Let me connect you with someone who can help you with this
+-   limit the length of the conversation and try to offer to talk to sales. Try to limit the conversation. After 2 or 3 questions. (This is not working so well. Need to see if it can be tweaked further)
+-   takeout and delivery goes to link sending.
+-   Ask upfront for the inbound sales agent if they need support help.
