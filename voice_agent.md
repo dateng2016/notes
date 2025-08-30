@@ -359,6 +359,7 @@ Use a differnt source (update the api in the analytics service)
     -   pizzahut -> 
 
 -   Transfer message -> Let me connect you with someone who can help you with this
--   limit the length of the conversation and try to offer to talk to sales. Try to limit the conversation. After 2 or 3 questions. (This is not working so well. Need to see if it can be tweaked further)
+
 -   takeout and delivery goes to link sending.
+-   phone order goes to link sending first as well. If asked then transfer.
 -   Ask upfront for the inbound sales agent if they need support help.
