@@ -358,6 +358,4 @@ Use a differnt source (update the api in the analytics service)
 - Attach recording url for inbound sales agent
 - Transfer message -> Let me connect you with someone who can help you with this
 
-
-
-
+- limit the length of the conversation and try to offer to talk to sales. Try to limit the conversation. After 2 or 3 questions. 
