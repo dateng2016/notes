@@ -350,16 +350,3 @@ Use a differnt source (update the api in the analytics service)
 -   Get the business name in the close message. Ask GPT. "Unfortunately, we are closed..." Make sure it says "Thank you for calling xyz"
 
 ## TODO 8.30
-
--   Call around to see how the first message looks like
-
-    -   Domino -> "Hello, and thank you for calling {{businessName}}, I'm Eva, your friendly artificial intelligence agent. This call is being recorded for quality and training purposes. How may I assist you today?"
-    -   Papa John's -> (this one simply says papa johns on xxx street)
-    -   Chickfila -> 
-    -   pizzahut -> 
-
--   Transfer message -> Let me connect you with someone who can help you with this
-
--   takeout and delivery goes to link sending.
--   phone order goes to link sending first as well. If asked then transfer.
--   Ask upfront for the inbound sales agent if they need support help.
