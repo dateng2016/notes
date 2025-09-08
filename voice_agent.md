@@ -350,3 +350,9 @@ Use a differnt source (update the api in the analytics service)
 -   Get the business name in the close message. Ask GPT. "Unfortunately, we are closed..." Make sure it says "Thank you for calling xyz"
 
 ## TODO 8.30
+
+## 9.8
+
+Catering order, collect name + phone number (double confirmation) 
+
+send SMS 
