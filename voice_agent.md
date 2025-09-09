@@ -351,8 +351,9 @@ Use a differnt source (update the api in the analytics service)
 
 ## TODO 8.30
 
-## 9.8
+## 9.8 Adem
 
 Catering order, collect name + phone number (double confirmation) 
-
 send SMS 
+
+
