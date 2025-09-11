@@ -364,3 +364,7 @@ order -> the best way of ordering is through online .... -> link sending
 
 if yes -> send
 if no -> phone order?
+
+## TODO:
+
+Move the order tracker info obtaining from webhook to task-executor then notification.
