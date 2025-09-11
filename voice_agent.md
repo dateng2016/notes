@@ -358,3 +358,9 @@ Catering order, collect name + phone number (double confirmation)
 send SMS 
 
 
+## 9.11
+
+order -> the best way of ordering is through online .... -> link sending
+
+if yes -> send
+if no -> phone order?
