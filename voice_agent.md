@@ -368,3 +368,7 @@ if no -> phone order?
 ## TODO:
 
 Move the order tracker info obtaining from webhook to task-executor then notification.
+
+info to be saved -> duration, disconnection reason
+
+look into openphone and stuff to see what info we should have in the report.
