@@ -365,10 +365,6 @@ order -> the best way of ordering is through online .... -> link sending
 
 ## TODO:
 
-
-info to be saved -> duration, disconnection reason
-
-look into openphone and stuff to see what info we should have in the report.
-
-
+- Frustration detection change
+- Report for receptionist
 
