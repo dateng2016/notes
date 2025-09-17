@@ -368,3 +368,27 @@ order -> the best way of ordering is through online .... -> link sending
 - Frustration detection change
 - Report for receptionist
 
+## Delivery Zone
+
+it's defined by a set of points
+
+delivery_zone table in the MAIN DB
+
+check company_info table or company_setting
+
+from an address to coordinate -> 
+
+if customer address -> see customer table for coordinate
+
+if restaurant address -> see resturant table
+
+if Neither -> call google map api
+
+
+Order placement top priority
+
+Have more info ready at beginning of the call 
+
+Sabbir: I can see that you have an order... ETA, customer information, 
+
+
