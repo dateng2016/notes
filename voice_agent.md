@@ -392,3 +392,12 @@ Have more info ready at beginning of the call
 Sabbir: I can see that you have an order... ETA, customer information, 
 
 
+## 9.23
+
+1. Online ordering parsing -> python project???
+2. Vector store -> DB schema -> one store might have multiple vector stores -> one vector store might have multiple files
+3. Order website parsing -> should we store the files or save in the DB is fine? We might need to store menu files in the future anyways.
+4. File upload in the future -> file storage?
+
+
+
