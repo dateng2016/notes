@@ -86,3 +86,11 @@ Retell AI -> Low
 
 
 
+## 9.23
+1. Online ordering parsing -> python project???
+2. Vector store -> DB schema -> one store might have multiple vector stores -> one vector store might have multiple files
+3. Order website parsing -> should we store the files or save in the DB is fine?
+4. File upload in the future -> file storage?
+
+
+
