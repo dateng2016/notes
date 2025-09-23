@@ -353,20 +353,18 @@ Use a differnt source (update the api in the analytics service)
 
 ## 9.8 Adem
 
-Catering order, collect name + phone number (double confirmation) 
+Catering order, collect name + phone number (double confirmation)
 
-send SMS 
-
+send SMS
 
 ## 9.11
 
 order -> the best way of ordering is through online .... -> link sending
 
-
 ## TODO:
 
-- Frustration detection change
-- Report for receptionist
+-   Frustration detection change
+-   Report for receptionist
 
 ## Delivery Zone
 
@@ -376,7 +374,7 @@ delivery_zone table in the MAIN DB
 
 check company_info table or company_setting
 
-from an address to coordinate -> 
+from an address to coordinate ->
 
 if customer address -> see customer table for coordinate
 
@@ -384,13 +382,11 @@ if restaurant address -> see resturant table
 
 if Neither -> call google map api
 
-
 Order placement top priority
 
-Have more info ready at beginning of the call 
+Have more info ready at beginning of the call
 
-Sabbir: I can see that you have an order... ETA, customer information, 
-
+Sabbir: I can see that you have an order... ETA, customer information,
 
 ## 9.23
 
@@ -398,6 +394,14 @@ Sabbir: I can see that you have an order... ETA, customer information,
 2. Vector store -> DB schema -> one store might have multiple vector stores -> one vector store might have multiple files
 3. Order website parsing -> should we store the files or save in the DB is fine? We might need to store menu files in the future anyways.
 4. File upload in the future -> file storage?
+5. Receptionist call summary -> how to implement?
 
+NOTES: So far the candidates ->
 
+GPT-4.1
 
+GEMINI 2.5 PRO
+
+Same Context window, GEMINI has more output token limit.
+
+Add special instructions in the text box
