@@ -390,11 +390,17 @@ Sabbir: I can see that you have an order... ETA, customer information,
 
 ## 9.23
 
-1. Online ordering parsing -> python project???
+1. Online ordering parsing -> which project?
 2. Vector store -> DB schema -> one store might have multiple vector stores -> one vector store might have multiple files
-3. Order website parsing -> should we store the files or save in the DB is fine? We might need to store menu files in the future anyways.
-4. File upload in the future -> file storage?
-5. Receptionist call summary -> how to implement?
+3. Order website parsing -> we will get a json -> should we store as files or save in the DB is fine? We might need to store menu files in the future anyways. And we need to upload things into the vector store.
+5. Do we have open ai usage in java project?
+6. Can I get a test server to test the selenium thing?
+
+### Less Urgent
+
+4. File upload  -> file storage?
+
+6. Receptionist call summary -> how to implement?
 
 NOTES: So far the candidates ->
 
@@ -405,3 +411,4 @@ GEMINI 2.5 PRO
 Same Context window, GEMINI has more output token limit.
 
 Add special instructions in the text box
+
