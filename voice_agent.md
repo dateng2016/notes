@@ -412,3 +412,8 @@ Same Context window, GEMINI has more output token limit.
 
 Add special instructions in the text box
 
+
+## 9.23
+
+# * DELIVERY ZONE set up for Mattenga. Vector store set up. 
+# * Set up the agent according to all their account settings.
