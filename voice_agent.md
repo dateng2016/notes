@@ -429,3 +429,14 @@ Add special instructions in the text box
 
 # * DELIVERY ZONE set up for Mattenga. Vector store set up. 
 # * Set up the agent according to all their account settings.
+
+
+## TODO 9.24
+
+- DONE Get Mattenga's Menu 
+- DONE Set up Mattenga's vector store for menu 
+- DONE Set up their Delivery zone 
+- DONE Set up the API for menu stuff 
+- Set up agent once deployed.
+
+
