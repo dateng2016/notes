@@ -433,10 +433,4 @@ Add special instructions in the text box
 
 ## TODO 9.24
 
-- DONE Get Mattenga's Menu 
-- DONE Set up Mattenga's vector store for menu 
-- DONE Set up their Delivery zone 
-- DONE Set up the API for menu stuff 
-- Set up agent once deployed.
-
 
