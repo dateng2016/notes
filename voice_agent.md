@@ -392,27 +392,25 @@ Sabbir: I can see that you have an order... ETA, customer information,
 
 1. Online ordering link parsing -> which project?
 
-Higher chance of things going wrong -> maybe another service -> in the core DB -> check with Shahriar -> 
+Higher chance of things going wrong -> maybe another service -> in the core DB -> check with Shahriar ->
 
 2. Vector store -> DB schema -> one store might have multiple vector stores -> one vector store might have multiple files
 
 3. Order website parsing -> we will get a json -> should we store as files or save in the DB is fine? We might need to store menu files in the future anyways. And we need to upload things into the vector store.
 
-5. Do we have open ai usage in java project?
+4. Do we have open ai usage in java project?
 
-shipday AI library DO NOT use the official java sdk from openai 
-
+shipday AI library DO NOT use the official java sdk from openai
 
 6. Can I get a test server to test the selenium thing?
 
-Talk with Shahriar. 
-
+Talk with Shahriar.
 
 ### Less Urgent
 
-4. File upload  -> file storage?
+4. File upload -> file storage?
 
-6. Receptionist call summary -> how to implement?
+5. Receptionist call summary -> how to implement?
 
 NOTES: So far the candidates ->
 
@@ -424,13 +422,14 @@ Same Context window, GEMINI has more output token limit.
 
 Add special instructions in the text box
 
-
 ## 9.23
 
-# * DELIVERY ZONE set up for Mattenga. Vector store set up. 
-# * Set up the agent according to all their account settings.
+# \* DELIVERY ZONE set up for Mattenga. Vector store set up.
 
+# \* Set up the agent according to all their account settings.
 
-## TODO 9.24
+## TODO 10.2
 
+-   Do you deliver to heritage hills? Fix the delivery zone issue
+-   I have a `build your own`... connect to team member
 
