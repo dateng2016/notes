@@ -433,3 +433,19 @@ Add special instructions in the text box
 -   Do you deliver to heritage hills? Fix the delivery zone issue
 -   I have a `build your own`... connect to team member
 
+## Shammo Notes
+
+-   
+
+
+## Shaon deployment
+
+Go to folder, check branch, PULL, Check the LOG, then just run the deploy.sh
+
+Check boxfuse
+
+Use the boxfuse version BEFORE deployement. 
+
+Also have jdk 17
+
+
