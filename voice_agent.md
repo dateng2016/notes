@@ -467,17 +467,22 @@ Delivery Cost ->
 
 ## TODO:
 
-- Reservation modification/cancellation -> TRANSFER
-- Order modification/cancellation -> TRANSFER
 - Regular Customer -> Custom Logic -> Needs to decide on the definition/logic for this. 
+
 - if they have active order pick up as usual
 - if no active order pick up and ask Hi thanks for calling …. Are you calling to place an order?
 
-- Monday 10AM local time goes out the receptionist report. This becomes LAST WEEK 
-- Give a few options for subject to Adem
 - Previous call logs from the same day. (Less urgent)
+
 - Shopify scraping. 
 
 - Hard code a solution to automatically transfer failed order agent 
 - Multiple AI Voices
-- Receptionist report update.
+
+- Receptionist report update. (Notified Zahid)
+
+- Set up log to debug why no weekly email.
+
+- Complaints / Catering notification opening status check
+
+
