@@ -467,7 +467,8 @@ Delivery Cost ->
 
 ## TODO:
 
-- Regular Customer -> Custom Logic -> Needs to decide on the definition/logic for this. 
+- Regular Customer -> Custom Logic -> Needs to decide on the definition/logic for this.
+
 
 - if they have active order pick up as usual
 - if no active order pick up and ask Hi thanks for calling …. Are you calling to place an order?
@@ -480,8 +481,6 @@ Delivery Cost ->
 
 - Multiple AI Voices
 
-- Receptionist report update. (Notified Zahid)
-
 - Set up log to debug why no weekly email.
 
 - Complaints / Catering notification opening status check
@@ -489,3 +488,9 @@ Delivery Cost ->
 - Duplicate Agents using conversation flow
 
 - Analyze receptionist calls
+
+- Receptionist report update. (Notified Zahid)
+
+Today's update:
+
+- looked into reservation. Fixed modify/cancellation transfer. Looked into shopify but hard to find menu page on shopify. 
