@@ -474,9 +474,10 @@ Delivery Cost ->
 
 - Previous call logs from the same day. (Less urgent)
 
-- Shopify scraping. 
+- Shopify scraping. (Hard to find websites)
 
 - Hard code a solution to automatically transfer failed order agent 
+
 - Multiple AI Voices
 
 - Receptionist report update. (Notified Zahid)
@@ -485,4 +486,4 @@ Delivery Cost ->
 
 - Complaints / Catering notification opening status check
 
-
+- Duplicate Agents using conversation flow
