@@ -435,8 +435,7 @@ Add special instructions in the text box
 
 ## Shammo Notes
 
--   
-
+-
 
 ## Shaon deployment
 
@@ -444,53 +443,51 @@ Go to folder, check branch, PULL, Check the LOG, then just run the deploy.sh
 
 Check boxfuse
 
-Use the boxfuse version BEFORE deployement. 
+Use the boxfuse version BEFORE deployement.
 
 Also have jdk 17
-
 
 ## Moin
 
 Use some GOOD calls -> Google folder to demo calls -> like complaints
 
-
 ## Vahag Follow up system
 
-When someone signs up -> email / SMS 
+When someone signs up -> email / SMS
 
 US and Canada -> Non-restaurant
 
-
-Delivery Cost -> 
-
-
+Delivery Cost ->
 
 ## TODO:
 
-- Regular Customer -> Custom Logic -> Needs to decide on the definition/logic for this.
+-   Regular Customer -> Custom Logic -> Needs to decide on the definition/logic for this.
 
+-   if they have active order pick up as usual
+-   if no active order pick up and ask Hi thanks for calling …. Are you calling to place an order?
 
-- if they have active order pick up as usual
-- if no active order pick up and ask Hi thanks for calling …. Are you calling to place an order?
+-   Previous call logs from the same day. (Less urgent)
 
-- Previous call logs from the same day. (Less urgent)
+-   Shopify scraping. (Hard to find websites)
 
-- Shopify scraping. (Hard to find websites)
+-   Hard code a solution to automatically transfer failed order agent
 
-- Hard code a solution to automatically transfer failed order agent 
+-   Multiple AI Voices
 
-- Multiple AI Voices
+-   Set up log to debug why no weekly email.
 
-- Set up log to debug why no weekly email.
+-   Complaints / Catering notification opening status check
 
-- Complaints / Catering notification opening status check
+-   Duplicate Agents using conversation flow
 
-- Duplicate Agents using conversation flow
+-   Analyze receptionist calls
 
-- Analyze receptionist calls
+-   Receptionist report update. (Notified Zahid)
 
-- Receptionist report update. (Notified Zahid)
+-   Order placement (Major Thing)
 
-Today's update:
+-   Voice selection
 
-- looked into reservation. Fixed modify/cancellation transfer. Looked into shopify but hard to find menu page on shopify. 
+-   Frontend Fix for menu upload.
+
+-   Look into openai real-time and agent api, Look into deepseek OCR.
