@@ -470,11 +470,7 @@ Delivery Cost ->
 
 -   Shopify scraping. (Hard to find websites)
 
--   Hard code a solution to automatically transfer failed order agent
-
--   Multiple AI Voices
-
--   Set up log to debug why no weekly email.
+-   Set up log to debug why no weekly email. (Ask Kamarul how to implement
 
 -   Complaints / Catering notification opening status check
 
@@ -488,6 +484,7 @@ Delivery Cost ->
 
 -   Voice selection
 
--   Frontend Fix for menu upload.
+-   Frontend Fix for menu upload. (Zahid)
 
 -   Look into openai real-time and agent api, Look into deepseek OCR.
+
