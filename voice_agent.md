@@ -488,6 +488,10 @@ Delivery Cost ->
 
 -   Look into openai real-time and agent api, Look into deepseek OCR.
 
+-   Receptionist report update
+
+-   Add log for debugging report not sending.
+
 ## Useful fields from the raw menu items
 
 id, name, description?, price, cost, stock, tax_type, sizes, 
@@ -495,6 +499,7 @@ id, name, description?, price, cost, stock, tax_type, sizes,
 ## Questions for Binbin (or to explore)
 
 `available_online` field -> does this mean whether the item is available currently? -> Check using the `genius` machine
+
 
 
 
