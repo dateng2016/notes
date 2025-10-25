@@ -494,13 +494,26 @@ Delivery Cost ->
 
 ## Useful fields from the raw menu items
 
-id, name, description?, price, cost, stock, tax_type, sizes, 
+id, name, description?, price, cost, stock, tax_type, sizes,
 
 ## Questions for Binbin (or to explore)
 
 `available_online` field -> does this mean whether the item is available currently? -> Check using the `genius` machine
 
+Log in to the admin web page on heartland
 
+Stock -1 ???
 
+subitem_id? -> What for?
 
+Where to check the meaning of the fields and stuff???
 
+How did you solve the allow subs
+
+in the modifier.json -> size_prices???? sort_order?
+
+`sort_order` in the section file -> any use?
+
+tag? attribute? inside the menu -> No use???
+
+Discuss with Adem about the UI for menu scraping.
