@@ -459,37 +459,6 @@ US and Canada -> Non-restaurant
 
 Delivery Cost ->
 
-## TODO:
-
--   Regular Customer -> Custom Logic -> Needs to decide on the definition/logic for this.
-
--   if they have active order pick up as usual
--   if no active order pick up and ask Hi thanks for calling …. Are you calling to place an order?
-
--   Previous call logs from the same day. (Less urgent)
-
--   Shopify scraping. (Hard to find websites)
-
--   Set up log to debug why no weekly email. (Ask Kamarul how to implement
-
--   Complaints / Catering notification opening status check
-
--   Duplicate Agents using conversation flow
-
--   Analyze receptionist calls
-
--   Order placement (Major Thing)
-
--   Voice selection
-
--   Frontend Fix for menu upload. (Zahid)
-
--   Look into openai real-time and agent api, Look into deepseek OCR.
-
--   Receptionist report update -> AI part
-
--   Add log for debugging report not sending.
-
 ## Questions for Binbin (or to explore)
 
 `available_online` field -> does this mean whether the item is available currently? -> Check using the `genius` machine
@@ -510,5 +479,57 @@ in the modifier.json -> size_prices???? sort_order?
 
 tag? attribute? inside the menu -> No use???
 
-Discuss with Adem about the UI for menu scraping.
+## TODO:
 
+-   Regular Customer -> Custom Logic -> Needs to decide on the definition/logic for this.
+
+-   if they have active order pick up as usual
+-   if no active order pick up and ask Hi thanks for calling …. Are you calling to place an order?
+-   also need to work on josh's feedback on this
+
+-   Previous call logs from the same day. (Less urgent)
+
+-   Shopify scraping. (Hard to find websites)
+
+-   Complaints / Catering notification opening status check
+
+-   Duplicate Agents using conversation flow
+
+-   Analyze receptionist calls
+
+-   Order placement (Major Thing)
+
+-   Voice selection
+
+-   Frontend Fix for menu upload. (Zahid)
+
+-   Receptionist report update -> AI part
+
+-   Discuss with Adem about the UI for menu scraping.
+
+-   Receptionist report AI summary?
+
+-   Jasmine? -> GO AHEAD
+
+tasks ->
+
+-   regular customer context
+    -   Something simple -> weekly calling to order -> order frequency -> 3 or 4 times a month & no existing order -> Are you looking to place an order
+    -   previous call
+-   order placement -> not a priority
+-   What to do with openai sdk -> less priority
+-   Should we just add menus for josh -> YES
+
+-   If their own app -> Take the link instead of ordering link.
+
+-   TODO: PUBLIC URI
+
+-   AI summary -> not important right now
+-   Male voice -> Liam
+-   
+
+email scheduling
+
+top priority -> email and report
+regular customer context
+app link
