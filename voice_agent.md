@@ -478,8 +478,6 @@ Delivery Cost ->
 
 -   Analyze receptionist calls
 
--   Receptionist report update. (Notified Zahid)
-
 -   Order placement (Major Thing)
 
 -   Voice selection
@@ -488,13 +486,9 @@ Delivery Cost ->
 
 -   Look into openai real-time and agent api, Look into deepseek OCR.
 
--   Receptionist report update
+-   Receptionist report update -> AI part
 
 -   Add log for debugging report not sending.
-
-## Useful fields from the raw menu items
-
-id, name, description?, price, cost, stock, tax_type, sizes,
 
 ## Questions for Binbin (or to explore)
 
@@ -517,3 +511,4 @@ in the modifier.json -> size_prices???? sort_order?
 tag? attribute? inside the menu -> No use???
 
 Discuss with Adem about the UI for menu scraping.
+
