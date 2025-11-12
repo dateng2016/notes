@@ -526,10 +526,67 @@ tasks ->
 
 -   AI summary -> not important right now
 -   Male voice -> Liam
--   
+-
 
 email scheduling
 
 top priority -> email and report
 regular customer context
 app link
+set up menu scraping
+
+GET the public URL thing done
+
+## Josh Calls
+
+-   https://shipdayinc-my.sharepoint.com/:u:/g/personal/adem_shipday_com/EZoZ0mc8Zp9Dri4usqzWWf4BHdlosHYaFh71vbqD187yeA?e=QRa140
+    -   call_b469b8573f979519ced87b10505
+    -   We did not capture the sound at Retell -> Most likely connection issue.
+-   https://shipdayinc-my.sharepoint.com/:u:/g/personal/adem_shipday_com/Ef2QOXXdgVJJoCaVy_YOA6YBYYSPooG0x-2axBii9wZElA?e=bRVbHk
+
+    -   call_d8e1092b562e63587a5a15b2a9c
+    -   Same as above
+
+-   https://shipdayinc-my.sharepoint.com/:u:/g/personal/adem_shipday_com/EQ8XGQRzTwdCp47QuAtXGqYBmUlBQECIf21z_pEdODpiCg?e=4dLUMa
+
+    -   Seems to be a perfectly good call
+
+-   https://shipdayinc-my.sharepoint.com/personal/adem_shipday_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fadem%5Fshipday%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2Fin%2D7187995050%2D2025%2D10%2D28%2D15%2D45%2D09%2D926%2DRoccosofRocBeach%2Emp3&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E7c46e8f4%2D4836%2D4503%2D8a47%2Dcc322abe2f09&ga=1
+
+    -   call_325b2fb25e2befd623aef69200e
+    -   Connection issue again
+
+-   https://shipdayinc-my.sharepoint.com/personal/adem_shipday_com/_layouts/15/stream.aspx?id=%2Fpersonal%2Fadem%5Fshipday%5Fcom%2FDocuments%2FMicrosoft%20Teams%20Chat%20Files%2Fin%2D7187995050%2D2025%2D10%2D28%2D16%2D07%2D55%2D754%2DRoccosofRocBeach%20%281%29%2Emp3&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E47553e81%2Da21f%2D448a%2D8057%2D45920ac0b023&ga=1
+
+
+
+### Call with connection issues:
+
+-   call_e57da877b0dc82bfdcf7331a61d
+
+
+## Binbin Sales Agent Notes
+
+After sign up -> choose strategy between EMAIL and CALL
+
+DB table -> `signup_followup` -> have different state, 
+
+Integration scheduler -> `NewLeadFollowupScheduler` (entry file)
+
+Failed order agent -> calling customer
+
+1. Calling the customer -> first thing to ask. 
+
+Ask the customer to resent the order??? If yes -> go back to the store and ask them to remake the food. Make this an option to configure for the merchant. Then come back and call the merchant again. If the flag is off -> operate as usual. 
+
+customer call -> would you like to resend the food? if yes -> thank you, I will notify the staff to send the replacement. call the merchant to ask for redrop. then ask the merchant if they want to make a refund request. (put this in the third call to the merchant) if no -> we notify the merchant to refund the customer and then ask if they want to make a request to refund from the doordash to the merchant. 
+
+1st call -> 3 attempts
+
+2nd call to customer -> 3 times
+
+3rd call -> 3 attempts
+
+After the customer call -> send the merchant a link no matter what. 
+
+
