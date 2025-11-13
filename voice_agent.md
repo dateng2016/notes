@@ -589,4 +589,11 @@ customer call -> would you like to resend the food? if yes -> thank you, I will 
 
 After the customer call -> send the merchant a link no matter what. 
 
+When customer decided whether they would like to redrop the order -> 
+
+Use API call. -> notify the owner of the decision
+
+At the end of the customer call -> check whether the above API has been called. -> If no decision and reached max attempt limit. notify the owner.
+
+have a way to track whether the customer has made their decision????
 
