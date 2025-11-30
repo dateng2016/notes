@@ -1,0 +1,49 @@
+More details in the doc
+
+Only 7 items in total?? Try more items to test the latency???
+
+
+Download more things??? -> Check my download files.
+heartland_menu_optimizer 
+- 216 -> Why?
+- 128 -> How is it sorted?
+- 90 -> Rule type??
+- 165 -> What's report category id?
+- 174 -> Why extract keywords like this
+- 195 -> Why only take first 150 chars
+
+retell_webhook.py
+- Too long...
+- CallSession class -> Separate file
+- verify_signature -> separate file
+- display order -> separate
+- html content -> separate file
+- prompts -> separate (e.g. line 372) -> I think you already have it in a separate file? no need to duplicate?
+- functions way too long
+- 50 Why handle order submission at call ended event? -> What if submission fails and customer does not know?
+- 377 -> get menu should be depreceated??? Moved to retell???
+- 417 -> one field at a time?? -> Meaning?
+- 422 -> How to know if `item_name` is invalid?
+- Any reason to separate the developer prompt from the system prompt? -> Right now I think you are submitting dev prompt each time there is a user input?? Maybe not necessary???
+- 232 What is `continue_dish`??
+- `process_user_input` needs to be broken into chunks -> 
+- 237 -> break down the for loop
+- 241 -> `get_menu_items()` only has dummy data???
+- 257 -> current_item_asked_optional -> Meaning?
+
+
+
+
+my_open_ai.py
+
+- 44 -> validate_items_backend -> break this into chunks
+- validate_items_backend can do multiple items at a time???
+- 89 -> Also using dummy data for ITEM_NAMES? Is this what was used during testing? -> Will latency be really long if use actual menu???
+- 49-60 -> Define some classes to better visualize how the content of the dict looks like?? also the meaning of each field
+- 109 -> REQUIRED_TOPLEVEL this is also a dummy variable???
+- 
+
+
+OrderProcessor.py
+- 63 -> append instead of = ????
+

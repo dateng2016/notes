@@ -597,3 +597,16 @@ At the end of the customer call -> check whether the above API has been called. 
 
 have a way to track whether the customer has made their decision????
 
+
+## Queues to create
+
+- notificationservice.failed-order.owner.notify -> shipday topic
+
+- taskexecutor.failed-order.customer.notify.initiate -> dlx scheduler + shipday topic
+- taskexecutor.failed-order.store.call-back -> dlx scheduler + shipday topic
+
+## Bindings 
+
+shipday.defer -> defer.one.minute -> *.failed-order.customer-notify.retry.#
+shipday.defer -> defer.one.minute -> *.failed-order.store-callback.retry.#
+
