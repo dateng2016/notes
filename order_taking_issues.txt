@@ -1,4 +1,4 @@
-More details in the doc
+More details in the doc -> Especially on the flow of the retell webhook such as process user input, the lifecycle of the call session, etc.
 
 Only 7 items in total?? Try more items to test the latency???
 
@@ -30,8 +30,9 @@ retell_webhook.py
 - 237 -> break down the for loop
 - 241 -> `get_menu_items()` only has dummy data???
 - 257 -> current_item_asked_optional -> Meaning?
-
-
+- 332 -> should the processing validated items be delegated to a background thread instead?? 
+- 349 -> Might be misusing the developer message (minor issue)
+- Does the process_user_input function handle multiple items at once??
 
 
 my_open_ai.py
@@ -41,6 +42,12 @@ my_open_ai.py
 - 89 -> Also using dummy data for ITEM_NAMES? Is this what was used during testing? -> Will latency be really long if use actual menu???
 - 49-60 -> Define some classes to better visualize how the content of the dict looks like?? also the meaning of each field
 - 109 -> REQUIRED_TOPLEVEL this is also a dummy variable???
+- 183 -> Break it down from there, choose better variable names to identify where they come from. avoid `vals`, hard to tell the difference between `mods` vs `item_mods` get lost after long number of lines of code. use something like mod_from_user or mod_from_menu. 
+- 196 -> Why should their be duplicates?
+- 253 -> Cut down the modification without user consent???
+- 512 -> What is that for?
+- 517 -> No difference between the 2 branches??
+- 527 -> Same as above??
 - 
 
 
