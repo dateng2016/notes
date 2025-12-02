@@ -33,6 +33,14 @@ retell_webhook.py
 - 332 -> should the processing validated items be delegated to a background thread instead?? 
 - 349 -> Might be misusing the developer message (minor issue)
 - Does the process_user_input function handle multiple items at once??
+- 181 -> Make it more structured (Define a class) to better track the content of the attributes.
+- 880 -> Does the submission of the order happen during or after the phone call???
+- 671, 807, 879, many places to submit the order????
+- 940, 968 -> Why validating again here, no validation during the finalize_order phase???
+- 707, 518, why different source of customer info?? metadata vs
+- 1015 -> should better name this, confusion around finalized vs. submitted...
+- 880 -> Break down the method, I'm getting lost in all the nested try/except blocks, don't make it so nested, hard to track.
+
 
 
 my_open_ai.py
@@ -53,4 +61,9 @@ my_open_ai.py
 
 OrderProcessor.py
 - 63 -> append instead of = ????
+- 108 -> If it's in the compelted items, does that not GUARANTEE the validity?
+- 283 284 -> Avoid using Dict[str, List[str]] ... Very hard to track what's inside. I had to go to the function defined for schema for open AI usage. Not very readable...
+- 300 309 -> Why should this be possible to happen, is this not guaranteed to be valid during the validate_backend ???
+- 313 -> modifier_data, item_modifiers, modifiers_by_category, these names do not really indicate well what's inside, easy to get mixed up. 
+- 223 -> Validate again at final phase???
 
