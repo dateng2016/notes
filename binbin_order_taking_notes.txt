@@ -2,6 +2,7 @@ More details in the doc -> Especially on the flow of the retell webhook such as 
 
 Only 7 items in total?? Try more items to test the latency???
 
+What were the latencies for all the operations?
 
 Download more things??? -> Check my download files.
 heartland_menu_optimizer 
